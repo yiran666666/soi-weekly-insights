@@ -20,10 +20,10 @@
     display: flex; align-items: center; justify-content: center;
   }
   .topbar a {
-    font-size: 15px; font-weight: 600; color: var(--text); text-decoration: none;
-    letter-spacing: -0.2px;
+    font-size: 14px; font-weight: 500; color: var(--accent); text-decoration: none;
+    display: flex; align-items: center; gap: 6px;
   }
-  .topbar a:hover { color: var(--accent); }
+  .topbar a:hover { text-decoration: underline; }
   .layout { display: flex; height: calc(100vh - var(--topbar-h)); margin-top: var(--topbar-h); }
   .sidebar {
     width: var(--sidebar-w); min-width: var(--sidebar-w); height: 100%;
@@ -46,7 +46,7 @@
 </style>
 </head>
 <body>
-<div class="topbar"><a href="index.html">China GDS</a></div>
+<div class="topbar"><a href="index.html">&larr; Back to Main Page</a></div>
 <div class="layout">
   <div class="sidebar">
     <div class="sidebar-title">Weekly Updates</div>
