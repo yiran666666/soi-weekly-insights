@@ -45,7 +45,7 @@
   <div class="sidebar">
     <div class="sidebar-brand"><a href="index.html">&larr; China GDS</a></div>
     <div style="padding:0 20px 12px;font-size:17px;font-weight:600;color:#1d1d1f;">Weekly Updates</div>
-    <a class="item" href="#" onclick="loadGdoc(this); return false;" style="color:#0071e3;font-size:13px;">View Full Doc &rarr;</a>
+    <a class="item" href="https://docs.google.com/document/d/e/2PACX-1vQ44s5nol6eR5ObE-_TD7pW9ApbqWrQP-jHOhVYy0U7jh4F0am0yyLXQnxRcsCuPrqIBGS9grEyloPl/pub" target="_blank" style="color:#0071e3;font-size:13px;">View Full Doc &rarr;</a>
     <a class="item active" href="#" onclick="loadUpdate('2026-03-09', this); return false;">2026-03-09</a>
 <a class="item " href="#" onclick="loadUpdate('2026-03-02', this); return false;">2026-03-02</a>
 <a class="item " href="#" onclick="loadUpdate('2026-02-09', this); return false;">2026-02-09</a>
@@ -59,11 +59,6 @@
 <script>
 function loadUpdate(dt, el) {
   document.getElementById('viewer').src = 'updates/' + dt + '.html';
-  document.querySelectorAll('.sidebar a.item').forEach(a => a.classList.remove('active'));
-  el.classList.add('active');
-}
-function loadGdoc(el) {
-  document.getElementById('viewer').src = 'https://docs.google.com/document/d/e/2PACX-1vQ44s5nol6eR5ObE-_TD7pW9ApbqWrQP-jHOhVYy0U7jh4F0am0yyLXQnxRcsCuPrqIBGS9grEyloPl/pub';
   document.querySelectorAll('.sidebar a.item').forEach(a => a.classList.remove('active'));
   el.classList.add('active');
 }
