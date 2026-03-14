@@ -1,6 +1,5 @@
-# V2 Goal Tracker
+# Weekly Insights: 2026-W07 (as of 2026-02-11)
 
-# Premium Account SoI Report (2026-02-05 to 2026-02-11)
 
 **Baseline Date:** 2025-12-31  
 **Target Growth:** +2% (Annual Target: 9.4%)

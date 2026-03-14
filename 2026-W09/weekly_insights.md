@@ -1,6 +1,5 @@
-# Feb27_2026
+# Weekly Insights: 2026-W09 (as of 2026-02-27)
 
-# Premium Account SoI Report (2026-02-21 to 2026-02-27)
 
 **Summary and Messaging to GM leads:**   
 **DRR Trends:** At the pod level, the average L7 DRR compared to the baseline (Dec 25 - Dec 31\) shows strong upward momentum from Top Pod 2, Top Pod 3, and Growth Pod 2.

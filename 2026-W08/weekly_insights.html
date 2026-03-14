@@ -88,13 +88,12 @@
 </style>
 </head>
 <body>
-<div class="nav-bar">
-  <span class="brand">SoI Insights</span>
-  <a href="../index.html">All Weeks</a>
+<div class="nav-bar" id="topnav">
+  <span class="brand">China GDS</span>
+  <a href="../index.html">Home</a>
 </div>
-<a class="back-link" href="../index.html">&larr; Back to all weeks</a>
-<h1>Feb20_2026</h1>
-<h1>Premium Account SoI Report (2026-02-14 to 2026-02-20)</h1>
+<a class="back-link" id="backlink" href="../index.html">&larr; Back to home</a>
+<h1>Weekly Insights: 2026-W08 (as of 2026-02-20)</h1>
 <p><strong>Baseline Date:</strong> 2025-12-31<br />
 <strong>Target Growth:</strong> +2% (Annual Target: 9.4%)</p>
 <hr />
@@ -510,5 +509,11 @@ L7 Average SoI is calculated as the arithmetic mean of daily spend-weighted SoI 
 </tbody>
 </table>
 <hr />
+<script>
+if (window.self !== window.top) {
+  document.getElementById('topnav').style.display = 'none';
+  document.getElementById('backlink').style.display = 'none';
+}
+</script>
 </body>
 </html>

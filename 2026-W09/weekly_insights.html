@@ -88,13 +88,12 @@
 </style>
 </head>
 <body>
-<div class="nav-bar">
-  <span class="brand">SoI Insights</span>
-  <a href="../index.html">All Weeks</a>
+<div class="nav-bar" id="topnav">
+  <span class="brand">China GDS</span>
+  <a href="../index.html">Home</a>
 </div>
-<a class="back-link" href="../index.html">&larr; Back to all weeks</a>
-<h1>Feb27_2026</h1>
-<h1>Premium Account SoI Report (2026-02-21 to 2026-02-27)</h1>
+<a class="back-link" id="backlink" href="../index.html">&larr; Back to home</a>
+<h1>Weekly Insights: 2026-W09 (as of 2026-02-27)</h1>
 <p><strong>Summary and Messaging to GM leads:</strong> <br />
 <strong>DRR Trends:</strong> At the pod level, the average L7 DRR compared to the baseline (Dec 25 - Dec 31) shows strong upward momentum from Top Pod 2, Top Pod 3, and Growth Pod 2.</p>
 <p>Overall, the average DRR is up by +0.52%. It is important to note that the baseline we use (the last week of December) was heavily inflated by an end-of-year uptick from Bitool, which accounted for \~31% of the total average DRR at that time. Bitool's share has since normalized to about 20% of our recent week's DRR.</p>
@@ -517,5 +516,11 @@ L7 Average SoI is calculated as the arithmetic mean of daily spend-weighted SoI 
 </tbody>
 </table>
 <hr />
+<script>
+if (window.self !== window.top) {
+  document.getElementById('topnav').style.display = 'none';
+  document.getElementById('backlink').style.display = 'none';
+}
+</script>
 </body>
 </html>

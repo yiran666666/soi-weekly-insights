@@ -1,6 +1,5 @@
-# Feb20_2026
+# Weekly Insights: 2026-W08 (as of 2026-02-20)
 
-# Premium Account SoI Report (2026-02-14 to 2026-02-20)
 
 **Baseline Date:** 2025-12-31  
 **Target Growth:** +2% (Annual Target: 9.4%)
