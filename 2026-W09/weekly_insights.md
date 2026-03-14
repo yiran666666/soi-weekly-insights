@@ -104,10 +104,3 @@ L7 Average SoI is calculated as the arithmetic mean of daily spend-weighted SoI 
 | **RIVERGAME_HK** | CHN Growth 3 | 1.69% | 6.94% | -5.26% | $31,674 | $1,176 | -96.29% |
 
 ---
-
-## 5. Daily Trends (YTD)
-
-### Overall YTD Trend Chart
-
-
-

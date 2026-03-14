@@ -82,9 +82,3 @@ L7 Average SoI is calculated as the arithmetic mean of daily spend-weighted SoI 
 | **Mattel163_China** | CHN Growth Top 2 | 3.81% | 2.58% | +1.24% | $1,232 |
 
 ---
-
-## 5. Daily Trends (YTD)
-
-### Overall YTD Trend Chart
-
-
