@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update — 2026-01-18</title>
+<style>
+  :root {
+    --text: #1d1d1f; --text-secondary: #86868b; --text-tertiary: #6e6e73;
+    --bg: #fbfbfd; --bg-card: #fff; --border: #d2d2d7; --border-light: #e8e8ed;
+    --accent: #0071e3; --accent-hover: #0077ed; --accent-bg: #f5f5f7;
+    --green: #34c759; --red: #ff3b30;
+  }
+  @media print {
+    .nav-bar, .back-link { display: none !important; }
+    body { font-size: 10px; padding: 0; background: #fff; }
+    h2 { page-break-before: auto; }
+    table { font-size: 8px; }
+    img { max-width: 100% !important; page-break-inside: avoid; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display',
+                 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    max-width: 1080px; margin: 0 auto; padding: 0 24px 80px;
+    color: var(--text); line-height: 1.58; background: var(--bg);
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  }
+  .nav-bar {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(251,251,253,0.72); backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    margin: 0 -24px; padding: 12px 24px; border-bottom: 0.5px solid var(--border);
+    display: flex; align-items: center; gap: 20px;
+  }
+  .nav-bar a { color: var(--text); text-decoration: none; font-size: 12px; }
+  .nav-bar a:hover { color: var(--accent); }
+  .nav-bar .brand { font-weight: 600; font-size: 14px; letter-spacing: -0.2px; }
+  .back-link {
+    display: inline-block; margin: 32px 0 0; font-size: 14px;
+    color: var(--accent); text-decoration: none;
+  }
+  .back-link:hover { text-decoration: underline; }
+  h1 {
+    font-size: 40px; font-weight: 700; color: var(--text); margin: 32px 0 6px;
+    letter-spacing: -0.8px; line-height: 1.1;
+  }
+  h2 {
+    font-size: 24px; font-weight: 600; color: var(--text); margin: 48px 0 16px;
+    letter-spacing: -0.3px; border-bottom: none;
+  }
+  h3 { font-size: 17px; font-weight: 600; color: var(--text); margin: 28px 0 8px; }
+  h4 { font-size: 15px; font-weight: 600; color: var(--text); margin: 20px 0 6px; }
+  p, li { font-size: 14px; color: var(--text-secondary); margin-bottom: 10px; }
+  p strong, li strong { color: var(--text); }
+  table {
+    border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 13px;
+    border-radius: 12px; overflow: hidden;
+    border: 0.5px solid var(--border);
+  }
+  th {
+    background: var(--accent-bg); color: var(--text-tertiary); font-weight: 500;
+    padding: 10px 14px; text-align: left; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.3px; border-bottom: 0.5px solid var(--border);
+  }
+  td { padding: 10px 14px; border-bottom: 0.5px solid var(--border-light); color: var(--text); }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: var(--accent-bg); }
+  blockquote {
+    border-left: 3px solid var(--accent); margin: 20px 0; padding: 16px 20px;
+    background: var(--accent-bg); border-radius: 0 12px 12px 0;
+    font-size: 13px; color: var(--text-secondary);
+  }
+  blockquote strong { color: var(--text); }
+  hr { border: none; height: 0.5px; background: var(--border); margin: 40px 0; }
+  img {
+    max-width: 100%; height: auto; margin: 16px 0; border-radius: 12px;
+    border: 0.5px solid var(--border-light);
+  }
+  code {
+    background: var(--accent-bg); padding: 3px 7px; border-radius: 5px; font-size: 12px;
+    font-family: 'SF Mono', SFMono-Regular, ui-monospace, Menlo, monospace;
+    color: var(--text-tertiary);
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul, ol { padding-left: 22px; }
+</style>
+</head>
+<body>
+<div class="nav-bar">
+  <span class="brand">China GDS</span>
+  <a href="../index.html">Home</a>
+</div>
+<a class="back-link" href="../index.html">&larr; Back to home</a>
+<h1>Weekly Update — January 18, 2026</h1>
+<h2>Gaming — KPI Framework</h2>
+<ul>
+<li>Methodology: Compare maximum ARPI (growth potential) vs. days to ARPI saturation</li>
+<li>Recommendation: Lower KPI for geos with longer saturation periods despite similar ARPI</li>
+<li>Case study: Netmarble analysis provided</li>
+</ul>
+<h2>IAP Gaming Updates</h2>
+<ul>
+<li>Holiday season impact positive across both iOS/Android (except Playrix Android)</li>
+<li>Nexon (KOR) massive scale-up in December; revenue data not shared due to conservative policy</li>
+<li>MoonActive: 70% Android / 50% iOS spend on RE in December</li>
+<li>APAC now represents 4 of top 10 clients by spend (3-month period)</li>
+<li><strong>Delta Index</strong> metric introduced: SoR Delta / Spend Delta; values &gt;= 1.5 indicate disproportionate Moloco impact from budget cuts</li>
+</ul>
+<h2>Advertiser Focus</h2>
+<ul>
+<li><strong>Playsimple</strong> (India): IAA Network Effects test driving improved ROAS; restarted unattributed postback sharing; relaunched iOS; consolidated duplicate campaigns</li>
+<li><strong>Mygames &amp; King</strong>: Testing new Reengagement audience creation using proprietary postback data (GDS/PM/CSE partnership)</li>
+</ul>
+</body>
+</html>
