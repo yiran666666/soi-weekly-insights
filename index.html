@@ -9,96 +9,40 @@
   * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
-    background: var(--bg); min-height: 100vh; padding: 60px 24px 80px;
-    -webkit-font-smoothing: antialiased;
+    background: var(--bg); min-height: 100vh; display: flex; align-items: center;
+    justify-content: center; -webkit-font-smoothing: antialiased;
   }
-  .container { max-width: 680px; margin: 0 auto; }
-  h1 {
-    font-size: 48px; font-weight: 700; color: var(--text);
-    letter-spacing: -1px; line-height: 1.08; margin-bottom: 6px;
-  }
-  .subtitle { color: var(--text-sec); font-size: 17px; font-weight: 400; margin-bottom: 48px; }
-  .section-title {
-    font-size: 13px; font-weight: 600; color: var(--text-sec);
-    text-transform: uppercase; letter-spacing: 0.5px; margin: 48px 0 12px; padding-left: 4px;
-  }
-  .section-title:first-of-type { margin-top: 0; }
-  .cards { display: flex; flex-direction: column; gap: 1px; background: var(--border); border-radius: 14px; overflow: hidden; }
+  .container { max-width: 600px; width: 100%; padding: 24px; }
+  h1 { font-size: 44px; font-weight: 700; color: var(--text); letter-spacing: -1px; line-height: 1.08; margin-bottom: 6px; }
+  .subtitle { color: var(--text-sec); font-size: 17px; margin-bottom: 40px; }
+  .cards { display: flex; flex-direction: column; gap: 12px; }
   .card {
-    display: block; background: #fff; padding: 20px 24px;
-    text-decoration: none; color: var(--text); transition: background 0.15s;
+    display: block; background: #fff; border-radius: 16px; padding: 28px 28px;
+    text-decoration: none; color: var(--text); transition: all 0.2s;
+    border: 0.5px solid var(--border);
   }
-  .card:hover { background: #f5f5f7; }
-  .card-week {
-    font-size: 17px; font-weight: 600; color: var(--text);
-    display: flex; align-items: center; gap: 10px; letter-spacing: -0.2px;
-  }
-  .card-desc { font-size: 13px; color: var(--text-sec); margin-top: 2px; }
-  .badge {
-    background: var(--accent); color: #fff; font-size: 10px; font-weight: 600;
-    padding: 2px 8px; border-radius: 10px; letter-spacing: 0.2px; text-transform: uppercase;
-  }
-  .card-icon { font-size: 20px; margin-right: 4px; }
-  .card-links { margin-top: 6px; }
-  .card-update {
-    display: inline-block; font-size: 12px; color: var(--accent);
-    text-decoration: none; margin-right: 12px;
-  }
-  .card-update:hover { text-decoration: underline; }
-  .card-row { display: contents; }
+  .card:hover { transform: translateY(-1px); box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+  .card-title { font-size: 20px; font-weight: 600; letter-spacing: -0.3px; display: flex; align-items: center; gap: 10px; }
+  .card-desc { font-size: 14px; color: var(--text-sec); margin-top: 4px; line-height: 1.5; }
+  .card-icon { font-size: 24px; }
 </style>
 </head>
 <body>
 <div class="container">
-  <h1>China GDS Repository</h1>
-  <div class="subtitle">Weekly insights, updates, and team resources</div>
-
-  <div class="section-title">Weekly Reports</div>
+  <h1>China GDS</h1>
+  <div class="subtitle">Repository</div>
   <div class="cards">
-    
-            <div class="card-row">
-              <a href="2026-W11/weekly_insights.html" class="card ">
-                <div class="card-week">2026-W11 </div>
-                <div class="card-desc">SoI Insights report</div>
-                <div class="card-links"><a href="updates/2026-03-09.html" class="card-update">GDS Update 2026-03-09 &rarr;</a> </div>
-              </a>
-            </div>
-            <div class="card-row">
-              <a href="2026-W09/weekly_insights.html" class="card ">
-                <div class="card-week">2026-W09 </div>
-                <div class="card-desc">SoI Insights report</div>
-                <div class="card-links"></div>
-              </a>
-            </div>
-            <div class="card-row">
-              <a href="2026-W08/weekly_insights.html" class="card ">
-                <div class="card-week">2026-W08 </div>
-                <div class="card-desc">SoI Insights report</div>
-                <div class="card-links"></div>
-              </a>
-            </div>
-            <div class="card-row">
-              <a href="2026-W07/weekly_insights.html" class="card ">
-                <div class="card-week">2026-W07 </div>
-                <div class="card-desc">SoI Insights report</div>
-                <div class="card-links"><a href="updates/2026-02-09.html" class="card-update">GDS Update 2026-02-09 &rarr;</a> </div>
-              </a>
-            </div>
-    <a href="https://docs.google.com/document/d/e/2PACX-1vQ44s5nol6eR5ObE-_TD7pW9ApbqWrQP-jHOhVYy0U7jh4F0am0yyLXQnxRcsCuPrqIBGS9grEyloPl/pub" class="card" target="_blank">
-      <div class="card-week"><span class="card-icon">📋</span> All GDS Weekly Updates</div>
-      <div class="card-desc">Full archive — auto-refreshes from Google Docs &rarr;</div>
+    <a href="updates.html" class="card">
+      <div class="card-title"><span class="card-icon">📋</span> Weekly Updates</div>
+      <div class="card-desc">GDS team updates, issue tracking, and operational notes</div>
     </a>
-  </div>
-
-  <div class="section-title">Knowledge Center</div>
-  <div class="cards">
-    <a href="https://www.notion.so/moloco/GDS-Knowledge-Center-2b2cdb35133680e3898ed4bf1a11e1c1" class="card" target="_blank">
-      <div class="card-week"><span class="card-icon">📚</span> GDS Knowledge Center</div>
-      <div class="card-desc">Notion — processes, playbooks, and team resources &rarr;</div>
+    <a href="insights.html" class="card">
+      <div class="card-title"><span class="card-icon">📊</span> Premium Account SoI Trends</div>
+      <div class="card-desc">Weekly SoI insights, contribution analysis, and account deep-dives</div>
     </a>
-    <a href="https://docs.google.com/document/d/1tBSbWthgzOWPozZUGnJ13FsIpLf208o20eB2Z8p7URQ/edit?tab=t.0" class="card" target="_blank">
-      <div class="card-week"><span class="card-icon">⚙️</span> ML + Bidder Operational Hub</div>
-      <div class="card-desc">Google Doc — ML and bidder operations reference &rarr;</div>
+    <a href="knowledge.html" class="card">
+      <div class="card-title"><span class="card-icon">📚</span> Knowledge Repository</div>
+      <div class="card-desc">Playbooks, documentation, and reference links</div>
     </a>
   </div>
 </div>

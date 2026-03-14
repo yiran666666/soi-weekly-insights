@@ -181,4 +181,4 @@
 >
 > Formula: `contribution = (account Mar SoI × share of vertical Mar spend) − (account baseline SoI × share of vertical baseline spend)`
 
-*Generated 2026-03-14 21:04. All SoI values are spend-weighted. Metrics use March (MTD) average (Mar 1 – 2026-03-13) vs baseline unless noted. Monthly trajectory and Section 1 table show Jan–Mar for context.*
+*Generated 2026-03-14 21:10. All SoI values are spend-weighted. Metrics use March (MTD) average (Mar 1 – 2026-03-13) vs baseline unless noted. Monthly trajectory and Section 1 table show Jan–Mar for context.*
