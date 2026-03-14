@@ -1,158 +1,98 @@
-# Weekly Insights: 2026-W08 (as of 2026-02-22)
+# Feb20_2026
 
-## TLDR
+# Premium Account SoI Report (2026-02-14 to 2026-02-20)
 
-**Overall:** March (MTD) SoI is **0.00%** (-7.37%pp vs 7.37% baseline), the strongest month YTD. Monthly trajectory: 2026-01: 7.31% -> 2026-02: 6.85%. YTD average is 7.11% (-0.26%pp), weighed down by the Feb dip. Gap to 9.37% target: **+2.26%pp** (need +0.22%pp/month over 10 months).
-
-**Why the gap:** In March, Moloco installs are **-100%** vs baseline (399,549 -> 0/day) while unattributed installs are **-100%** (18,956,661 -> 0/day). Spend is healthy at $0/day (-100.0% vs baseline). This is an **install volume problem**, not a spend problem.
-
-**Gaming vs Consumer (March MTD):**
-- **Gaming:** SoI 0.00% (-7.88%pp vs baseline), DRR $0 (-100.0%), portfolio contribution **-7.177pp** (0% of spend)
-- **Consumer:** SoI 0.00% (-1.97%pp vs baseline), DRR $0 (-100.0%), portfolio contribution **-0.176pp** (0% of spend)
-
-**SoI x Spend Matrix (March MTD vs baseline, top 3 accounts per quadrant by DRR):**
-
-*Gaming:*
-
-| Quadrant | Account | Mar SoI | vs BL | Mar DRR | vs BL | Why |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| SoI Down + Spend Down | **CENTURY_GAMES** | 0.00% | -10.75% | $0 | -100.0% | Moloco installs dropped sharply (-100%) |
-|  | **BITOOL** | 0.00% | -3.85% | $0 | -100.0% | Moloco installs dropped sharply (-100%) |
-|  | **RIVERGAME_HK** | 0.00% | -6.94% | $0 | -100.0% | Moloco installs dropped sharply (-100%) |
-
-*Consumer:*
-
-| Quadrant | Account | Mar SoI | vs BL | Mar DRR | vs BL | Why |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| SoI Down + Spend Down | **TIKTOK_US** | 0.00% | -0.27% | $0 | -100.0% | Moloco installs dropped sharply (-100%) |
-|  | **MICO** | 0.00% | -3.55% | $0 | -100.0% | Moloco installs dropped sharply (-100%) |
-|  | **LEMON8** | 0.00% | -1.02% | $0 | -100.0% | Moloco installs dropped sharply (-100%) |
-
-**Next Steps:**
-
-**P1 — Assess SoI Down + Spend Down (25 accounts):** Pulling back — app-level review needed: is this intentional budget reallocation, seasonal pullback, or early churn signal? For accounts with sharp Moloco install drops, check for campaign pauses, creative fatigue, or the app shifting budget to other channels.
-- Accounts: CENTURY_GAMES, BITOOL, Tigo_Tigo_Madhouse_0108_0, KINGSGROUP, EssentialsTech, MICO, Last Z_IOS_01(drb5MYyoQAz, MICROFUN, TOPGAMES, LEMON8, Wedobest_Screw Sort Puzzl, Luckymoney, TIKTOK_US, RIVERGAME_HK, LASTWAR, Lands of Jail_Madhouse_04, SPEELEAD, ZerooGravity, Dark War Survival_MADHOUS, Learnings, BYTEDANCEPTE, NetEase, AVIAGAMES, 37GAMES, Mattel163_China
+**Baseline Date:** 2025-12-31  
+**Target Growth:** +2% (Annual Target: 9.4%)
 
 ---
 
-## 1. Overall YTD Trends (Baseline: 2025-12-31)
+## 1. Overall Premium Account SoI
 
-![YTD Daily Trends](ytd_overall_trends.png)
+| Metric | Value |
+| :---- | :---- |
+| **L7 Average SoI (Recent Week)** | **6.72%** |
+| Baseline SoI (2025-12-31) | 7.37% |
+| Annual Target | 9.37% |
+| **Change (L7 vs Baseline)** | **-0.66%** |
+| **Progress (L7 vs Target)** | **-2.66%** |
+| **L7 Average Total DRR** | **$1,895,265** |
+| **Baseline Avg Total DRR** | **$1,906,704** |
+| **Change (L7 vs Baseline DRR)** | **-0.60%** |
 
-| Metric | Baseline (2025-12-31) | Jan | Feb |
-| :--- | :--- | :--- | :--- |
-| **SoI** | 7.37% | 7.31% (-0.07%) | 6.85% (-0.53%) |
-| **DRR** | $1,906,704 | $1,892,438 (-1%) | $1,921,971 (+1%) |
-| **Moloco Inst/Day** | 399,549 | 336,404 (-16%) | 290,591 (-27%) |
-| **Non-Moloco Inst/Day** | 18,956,661 | 19,813,994 (+5%) | 23,824,382 (+26%) |
+[!NOTE]  
+L7 Average SoI is calculated as the arithmetic mean of daily spend-weighted SoI snapshots. For detailed methodologies, please refer to [this documentation](https://docs.google.com/document/d/12x-EQth6N-tSGYFi74tTHOQ0FdwFclwckOzgbvvYqQE/edit?tab=t.dimwi2kxtco8#heading=h.eb4g3swxzvdp).
 
 ---
 
-## 2. Top SoI Drivers (March vs Baseline)
+## 2. Gaming vs Consumer Breakdown
 
 ### Gaming
 
-**Mattel163_China** | CHN Growth Top 2 | Mar DRR: $0 (-100.0%)
-![Mattel163_China](acct_Mattel163_China.png)
-> Mar SoI 0.0% (-2.58%pp vs baseline), contrib -0.001pp — Moloco installs dropped -100%, dragging share down.
-
-**37GAMES** | CHN Growth 2 | Mar DRR: $0 (-100.0%)
-![37GAMES](acct_37GAMES.png)
-> Mar SoI 0.0% (-3.42%pp vs baseline), contrib -0.004pp — Moloco installs dropped -100%, dragging share down.
-
-**AVIAGAMES** | CHN Growth Top 2 | Mar DRR: $0 (-100.0%)
-![AVIAGAMES](acct_AVIAGAMES.png)
-> Mar SoI 0.0% (-1.29%pp vs baseline), contrib -0.007pp — Moloco installs dropped -100%, dragging share down.
-
----
-
-## 3. Top SoI Drags (March vs Baseline)
-
-### Gaming
-
-**KINGSGROUP** | CHN Growth Top 2 | Mar DRR: $0 (-100.0%)
-![KINGSGROUP](acct_KINGSGROUP.png)
-> Mar SoI 0.0% (-13.30%pp vs baseline), contrib -0.793pp — Moloco installs dropped -100%, dragging share down.
-
-**BITOOL** | CHN Growth Top 3 | Mar DRR: $0 (-100.0%)
-![BITOOL](acct_BITOOL.png)
-> Mar SoI 0.0% (-3.85%pp vs baseline), contrib -1.299pp — Moloco installs dropped -100%, dragging share down.
-
-**CENTURY_GAMES** | CHN Growth Top 3 | Mar DRR: $0 (-100.0%)
-![CENTURY_GAMES](acct_CENTURY_GAMES.png)
-> Mar SoI 0.0% (-10.75%pp vs baseline), contrib -3.047pp — Moloco installs dropped -100%, dragging share down.
+* **L7 Average SoI:** 7.22%  
+* **Baseline SoI:** 7.88%  
+* **Change (L7 vs Baseline SoI):** -0.66%  
+* **L7 Avg DRR:** $1,734,403  
+* **Baseline Avg DRR:** $1,736,363  
+* **Change (L7 vs Baseline DRR):** -0.11%
 
 ### Consumer
 
-**LEMON8** | CHN Growth Top 1 | Mar DRR: $0 (-100.0%)
-![LEMON8](acct_LEMON8.png)
-> Mar SoI 0.0% (-1.02%pp vs baseline), contrib -0.179pp — Moloco installs dropped -100%, dragging share down.
-
-**MICO** | CHN Growth Top 1 | Mar DRR: $0 (-100.0%)
-![MICO](acct_MICO.png)
-> Mar SoI 0.0% (-3.55%pp vs baseline), contrib -0.761pp — Moloco installs dropped -100%, dragging share down.
-
-**Tigo_Tigo_Madhouse_0108_01(jLDRcRVvxemrL4Q4)** | CHN Growth 1 | Mar DRR: $0 (-100.0%)
-![Tigo_Tigo_Madhouse_0108_01(jLD](acct_Tigo_Tigo_Madhouse_0108_01jLD.png)
-> Mar SoI 0.0% (-13.62%pp vs baseline), contrib -0.899pp — Moloco installs dropped -100%, dragging share down.
+* **L7 Average SoI:** 1.29%  
+* **Baseline SoI:** 1.97%  
+* **Change (L7 vs Baseline SoI):** -0.68%  
+* **L7 Avg DRR:** $160,862  
+* **Baseline Avg DRR:** $170,341  
+* **Change (L7 vs Baseline DRR):** -5.56%
 
 ---
 
-## 4. Install & Spend Decomposition (March vs Baseline)
+## 3. Pod Level Breakdown (L7 Average vs Baseline: 2025-12-31)
 
-![Install Decomposition](install_decomposition.png)
-
-**Gaming:**
-- *Drivers* (Mattel163_China, 37GAMES, AVIAGAMES): Avg Moloco installs -100%, unattributed -100%, spend -100% vs baseline.
-- *Droppers* (KINGSGROUP, BITOOL, CENTURY_GAMES): Avg Moloco installs -100%, unattributed -100%, spend -100% vs baseline.
-
-**Consumer:**
-- *Droppers* (LEMON8, MICO, Tigo_Tigo_Madhouse_0): Avg Moloco installs -100%, unattributed -100%, spend -100% vs baseline.
-
----
-
-## 5. All Accounts at a Glance
-
-| Account | Pod | BL SoI | BL DRR | Jan SoI (vs BL) | Jan DRR (vs BL) | Feb SoI (vs BL) | Feb DRR (vs BL) | Vert Contrib |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **CENTURY_GAMES** | CHN Growth Top 3 | 10.8% | $492,114 | 10.5% (-0.2%) | $619,900 (+26%) | 10.3% (-0.4%) | $663,246 (+35%) | -3.047pp |
-| **BITOOL** | CHN Growth Top 3 | 3.8% | $586,718 | 3.4% (-0.5%) | $397,806 (-32%) | 2.8% (-1.1%) | $391,778 (-33%) | -1.299pp |
-| **MICROFUN** | CHN Growth Top 3 | 7.1% | $61,269 | 5.3% (-1.8%) | $68,163 (+11%) | 6.8% (-0.3%) | $106,171 (+73%) | -0.250pp |
-| **KINGSGROUP** | CHN Growth Top 2 | 13.3% | $103,515 | 11.2% (-2.1%) | $130,388 (+26%) | 9.5% (-3.8%) | $109,005 (+5%) | -0.793pp |
-| **TIKTOK_US** | CHN Growth Top 1 | 0.3% | $79,827 | 0.2% (-0.1%) | $82,120 (+3%) | 0.1% (-0.2%) | $92,722 (+16%) | -0.128pp |
-| **Learnings** | CHN Growth Top 2 | 1.2% | $25,168 | 1.1% (-0.1%) | $39,036 (+55%) | 0.8% (-0.3%) | $76,734 (+205%) | -0.017pp |
-| **Wedobest_Screw Sort Puzzl** | CHN Growth Top 3 | 6.6% | $41,139 | 5.3% (-1.3%) | $51,361 (+25%) | 7.3% (+0.7%) | $76,326 (+86%) | -0.156pp |
-| **EssentialsTech** | CHN Growth Top 2 | 14.9% | $92,260 | 13.1% (-1.7%) | $103,066 (+12%) | 10.7% (-4.2%) | $96,953 (+5%) | -0.790pp |
-| **Luckymoney** | CHN Growth Top 2 | 6.4% | $36,531 | 6.2% (-0.2%) | $40,189 (+10%) | 7.0% (+0.6%) | $50,231 (+38%) | -0.134pp |
-| **LASTWAR** | CHN Growth Top 2 | 3.1% | $69,608 | 4.6% (+1.5%) | $82,688 (+19%) | 8.0% (+4.9%) | $49,712 (-29%) | -0.124pp |
-| **Last Z_IOS_01(drb5MYyoQAz** | CHN Growth 3 | 12.0% | $106,795 | 9.9% (-2.1%) | $79,989 (-25%) | 7.8% (-4.2%) | $36,764 (-66%) | -0.738pp |
-| **MICO** | CHN Growth Top 1 | 3.6% | $36,348 | 3.2% (-0.3%) | $35,148 (-3%) | 2.8% (-0.7%) | $35,064 (-4%) | -0.761pp |
-| **TOPGAMES** | CHN Growth Top 2 | 16.8% | $21,444 | 13.8% (-3.0%) | $22,214 (+4%) | 12.1% (-4.7%) | $20,556 (-4%) | -0.207pp |
-| **ZerooGravity** | CHN Growth 3 | 6.0% | $11,100 | 4.0% (-2.0%) | $13,196 (+19%) | 3.0% (-3.0%) | $18,784 (+69%) | -0.038pp |
-| **LEMON8** | CHN Growth Top 1 | 1.0% | $29,683 | 0.9% (-0.1%) | $22,467 (-24%) | 0.7% (-0.3%) | $15,996 (-46%) | -0.179pp |
-| **AVIAGAMES** | CHN Growth Top 2 | 1.3% | $9,915 | 2.9% (+1.6%) | $17,643 (+78%) | 3.4% (+2.1%) | $17,811 (+80%) | -0.007pp |
-| **SPEELEAD** | CHN Growth 3 | 8.9% | $12,514 | 6.6% (-2.3%) | $12,481 (-0%) | 6.1% (-2.8%) | $12,347 (-1%) | -0.064pp |
-| **BYTEDANCEPTE** | CHN Growth Top 1 | 0.2% | $12,672 | 0.2% (-0.0%) | $12,197 (-4%) | 0.1% (-0.1%) | $11,628 (-8%) | -0.016pp |
-| **NetEase** | CHN Growth Top 2 | 1.4% | $15,050 | 1.0% (-0.4%) | $11,509 (-24%) | 0.6% (-0.8%) | $8,799 (-42%) | -0.012pp |
-| **Tigo_Tigo_Madhouse_0108_0** | CHN Growth 1 | 13.6% | $11,204 | 13.1% (-0.6%) | $11,381 (+2%) | 11.8% (-1.8%) | $9,427 (-16%) | -0.899pp |
-| **37GAMES** | CHN Growth 2 | 3.4% | $2,159 | 2.0% (-1.4%) | $4,704 (+118%) | 3.4% (-0.1%) | $5,329 (+147%) | -0.004pp |
-| **Lands of Jail_Madhouse_04** | CHN Growth 2 | 22.2% | $6,969 | 9.2% (-13.0%) | $7,681 (+10%) | 9.6% (-12.6%) | $6,870 (-1%) | -0.089pp |
-| **Dark War Survival_MADHOUS** | CHN Growth 3 | 3.3% | $9,581 | 2.2% (-1.1%) | $7,807 (-19%) | 1.0% (-2.3%) | $6,068 (-37%) | -0.018pp |
-| **RIVERGAME_HK** | CHN Growth 3 | 6.9% | $31,674 | 6.3% (-0.7%) | $17,862 (-44%) | 0.9% (-6.1%) | $2,270 (-93%) | -0.127pp |
-| **Mattel163_China** | CHN Growth Top 2 | 2.6% | $840 | 3.2% (+0.6%) | $1,217 (+45%) | 2.3% (-0.3%) | $1,380 (+64%) | -0.001pp |
+| Pod Name | Accounts | L7 SoI | Baseline SoI | vs Baseline | Baseline DRR | L7 Avg DRR | DRR Change |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| **CHN Growth Top 1** | 5 | 0.68% | 1.15% | -0.47% | $159,137 | $151,572 | -4.75% |
+| **CHN Growth Top 2** | 9 | 7.37% | 9.50% | -2.13% | $374,330 | $426,240 | +13.87% |
+| **CHN Growth Top 3** | 4 | 7.33% | 7.01% | +0.32% | $1,181,241 | $1,220,187 | +3.30% |
+| **CHN Growth 1** | 1 | 11.19% | 13.62% | -2.44% | $11,204 | $9,291 | -17.08% |
+| **CHN Growth 2** | 2 | 6.59% | 17.72% | -11.12% | $9,128 | $14,610 | +60.05% |
+| **CHN Growth 3** | 5 | 4.87% | 10.08% | -5.20% | $171,664 | $73,365 | -57.26% |
 
 ---
 
-> **How to read Vertical Contribution (pp)**
->
-> Contribution is calculated **within each vertical** (Gaming and Consumer separately). Each account's contribution measures how many percentage-points it adds to (or subtracts from) its vertical's SoI change vs baseline.
->
-> It depends on **two things**: (1) whether the account's SoI went up or down, and (2) how big a slice of its vertical's spend it represents.
->
-> - A large-spend Gaming account with a small SoI drop can drag Gaming SoI down significantly (e.g. BITOOL: large share of Gaming spend).
-> - A small Consumer account with a big SoI gain barely moves Consumer SoI (small share of Consumer spend).
-> - An account can show *negative contribution even when its own SoI improved* — this happens when its spend share within the vertical shrank.
->
-> Formula: `contribution = (account Mar SoI × share of vertical Mar spend) − (account baseline SoI × share of vertical baseline spend)`
+## 4. Account-Level SoI Detail (L7 Average vs Baseline: 2025-12-31)
 
-*Generated 2026-03-14 19:14. All SoI values are spend-weighted. Metrics use March (MTD) average (Mar 1 – 2026-02-22) vs baseline unless noted. Monthly trajectory and Section 1 table show Jan–Mar for context.*
+| Account | Pod | L7 SoI | Baseline | vs Baseline | Baseline DRR | L7 Avg DRR | DRR Change |
+| :---- | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
+| **CENTURY_GAMES** | CHN Growth Top 3 | 9.77% | 10.75% | -0.98% | $492,114 | $665,211 | +35.17% |
+| **BITOOL** | CHN Growth Top 3 | 2.52% | 3.85% | -1.32% | $586,718 | $353,699 | -39.72% |
+| **MICROFUN** | CHN Growth Top 3 | 7.52% | 7.08% | +0.43% | $61,269 | $117,481 | +91.75% |
+| **KINGSGROUP** | CHN Growth Top 2 | 10.56% | 13.30% | -2.74% | $103,515 | $109,315 | +5.60% |
+| **TIKTOK_US** | CHN Growth Top 1 | 0.11% | 0.27% | -0.16% | $79,827 | $95,008 | +19.02% |
+| **Learnings** | CHN Growth Top 2 | 0.81% | 1.18% | -0.37% | $25,168 | $84,059 | +233.99% |
+| **Wedobest_Screw Sort Puzzle_Madhouse_1226_01(VpSvKE3W1NWor3jZ)** | CHN Growth Top 3 | 7.48% | 6.58% | +0.90% | $41,139 | $83,796 | +103.69% |
+| **EssentialsTech** | CHN Growth Top 2 | 8.86% | 14.87% | -6.01% | $92,260 | $81,728 | -11.42% |
+| **Luckymoney** | CHN Growth Top 2 | 9.15% | 6.39% | +2.76% | $36,531 | $55,300 | +51.38% |
+| **LASTWAR** | CHN Growth Top 2 | 7.48% | 3.09% | +4.39% | $69,608 | $49,682 | -28.63% |
+| **Last Z_IOS_01(drb5MYyoQAzpzZHJ)** | CHN Growth 3 | 6.22% | 12.00% | -5.79% | $106,795 | $32,964 | -69.13% |
+| **MICO** | CHN Growth Top 1 | 2.63% | 3.55% | -0.93% | $36,348 | $31,393 | -13.63% |
+| **TOPGAMES** | CHN Growth Top 2 | 12.76% | 16.79% | -4.03% | $21,444 | $20,460 | -4.59% |
+| **ZerooGravity** | CHN Growth 3 | 3.15% | 5.98% | -2.83% | $11,100 | $19,381 | +74.60% |
+| **LEMON8** | CHN Growth Top 1 | 0.64% | 1.02% | -0.38% | $29,683 | $14,305 | -51.81% |
+| **AVIAGAMES** | CHN Growth Top 2 | 2.77% | 1.29% | +1.48% | $9,915 | $13,937 | +40.57% |
+| **SPEELEAD** | CHN Growth 3 | 6.46% | 8.91% | -2.45% | $12,514 | $12,530 | +0.12% |
+| **BYTEDANCEPTE** | CHN Growth Top 1 | 0.11% | 0.21% | -0.10% | $12,672 | $10,865 | -14.26% |
+| **NetEase** | CHN Growth Top 2 | 0.68% | 1.42% | -0.74% | $15,050 | $10,104 | -32.86% |
+| **Tigo_Tigo_Madhouse_0108_01(jLDRcRVvxemrL4Q4)** | CHN Growth 1 | 11.19% | 13.62% | -2.44% | $11,204 | $9,291 | -17.08% |
+| **37GAMES** | CHN Growth 2 | 3.70% | 3.42% | +0.28% | $2,159 | $7,677 | +255.62% |
+| **Lands of Jail_Madhouse_0417_01(qsuecwBPeEOLSEHg)** | CHN Growth 2 | 9.80% | 22.22% | -12.42% | $6,969 | $6,933 | -0.52% |
+| **Dark War Survival_MADHOUSE_0225_01(splxYUGSLl1YWyTE)** | CHN Growth 3 | 1.06% | 3.32% | -2.26% | $9,581 | $5,998 | -37.39% |
+| **RIVERGAME_HK** | CHN Growth 3 | 0.41% | 6.94% | -6.54% | $31,674 | $2,492 | -92.13% |
+| **Mattel163_China** | CHN Growth Top 2 | 3.22% | 2.58% | +0.64% | $840 | $1,657 | +97.15% |
+
+---
+
+## 5. Daily Trends (YTD)
+
+
+
