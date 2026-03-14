@@ -3,44 +3,72 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <title>Weekly Insights</title>
 <style>
+  :root { --blue: #1d4ed8; --blue-light: #3b82f6; --blue-bg: #eff6ff; --green: #059669;
+           --red: #dc2626; --gray-50: #f9fafb; --gray-100: #f3f4f6; --gray-200: #e5e7eb;
+           --gray-600: #4b5563; --gray-900: #111827; }
   @media print {
-    body { font-size: 11px; }
-    h1 { font-size: 18px; }
+    .nav-bar, .back-link { display: none !important; }
+    body { font-size: 10px; padding: 0; }
     h2 { page-break-before: auto; }
-    table { font-size: 9px; }
+    table { font-size: 8px; }
     img { max-width: 100% !important; page-break-inside: avoid; }
   }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-    max-width: 1200px; margin: 0 auto; padding: 20px 40px;
-    color: #1a1a1a; line-height: 1.6; background: #fff;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 1280px; margin: 0 auto; padding: 0 40px 60px;
+    color: var(--gray-900); line-height: 1.65; background: #fff;
   }
-  h1 { color: #111; border-bottom: 2px solid #2563EB; padding-bottom: 8px; }
-  h2 { color: #2563EB; margin-top: 32px; border-bottom: 1px solid #e5e7eb; padding-bottom: 4px; }
-  h3 { color: #374151; }
+  .nav-bar {
+    position: sticky; top: 0; z-index: 100; background: var(--blue);
+    margin: 0 -40px; padding: 12px 40px;
+    display: flex; align-items: center; gap: 16px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+  .nav-bar a { color: #fff; text-decoration: none; font-size: 14px; opacity: 0.85; }
+  .nav-bar a:hover { opacity: 1; }
+  .nav-bar .brand { font-weight: 700; font-size: 16px; opacity: 1; letter-spacing: -0.3px; }
+  .back-link { display: inline-block; margin: 24px 0 0; font-size: 13px; color: var(--blue); text-decoration: none; }
+  .back-link:hover { text-decoration: underline; }
+  h1 { font-size: 28px; font-weight: 800; color: var(--gray-900); margin: 28px 0 8px;
+       letter-spacing: -0.5px; }
+  h2 { font-size: 20px; font-weight: 700; color: var(--blue); margin: 36px 0 12px;
+       padding-bottom: 6px; border-bottom: 2px solid var(--gray-200); }
+  h3 { font-size: 16px; font-weight: 600; color: var(--gray-600); margin: 20px 0 8px; }
+  h4 { font-size: 14px; font-weight: 600; margin: 16px 0 4px; }
+  p, li { font-size: 14px; margin-bottom: 8px; }
   table {
     border-collapse: collapse; width: 100%; margin: 16px 0; font-size: 12px;
+    border-radius: 8px; overflow: hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.08);
   }
-  th, td {
-    border: 1px solid #d1d5db; padding: 6px 10px; text-align: left;
-  }
-  th { background: #f3f4f6; font-weight: 600; }
-  tr:nth-child(even) { background: #f9fafb; }
+  th { background: var(--blue); color: #fff; font-weight: 600; padding: 10px 12px;
+       text-align: left; font-size: 11px; text-transform: uppercase; letter-spacing: 0.4px; }
+  td { padding: 8px 12px; border-bottom: 1px solid var(--gray-200); }
+  tr:nth-child(even) td { background: var(--gray-50); }
+  tr:hover td { background: var(--blue-bg); }
   blockquote {
-    border-left: 4px solid #2563EB; margin: 12px 0; padding: 8px 16px;
-    background: #eff6ff; color: #1e40af; font-size: 13px;
+    border-left: 4px solid var(--blue-light); margin: 16px 0; padding: 12px 20px;
+    background: var(--blue-bg); border-radius: 0 8px 8px 0; font-size: 13px; color: #1e3a5f;
   }
-  hr { border: none; border-top: 1px solid #e5e7eb; margin: 24px 0; }
-  img { max-width: 100%; height: auto; margin: 8px 0; border-radius: 4px; }
-  strong { color: #111; }
-  code {
-    background: #f3f4f6; padding: 2px 6px; border-radius: 3px; font-size: 12px;
-  }
+  hr { border: none; border-top: 1px solid var(--gray-200); margin: 28px 0; }
+  img { max-width: 100%; height: auto; margin: 12px 0; border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+  strong { color: var(--gray-900); }
+  code { background: var(--gray-100); padding: 2px 6px; border-radius: 4px; font-size: 12px;
+         font-family: 'SF Mono', 'Fira Code', monospace; }
+  a { color: var(--blue); }
+  ul, ol { padding-left: 24px; }
 </style>
 </head>
 <body>
+<div class="nav-bar">
+  <span class="brand">SoI Insights</span>
+  <a href="../index.html">All Weeks</a>
+</div>
+<a class="back-link" href="../index.html">&larr; Back to all weeks</a>
 <h1>Weekly Insights: 2026-W11 (as of 2026-03-13)</h1>
 <h2>TLDR</h2>
 <p><strong>Overall:</strong> March (MTD) SoI is <strong>7.39%</strong> (+0.02%pp vs 7.37% baseline), the strongest month YTD. Monthly trajectory: 2026-01: 7.31% -&gt; 2026-02: 6.83% -&gt; 2026-03: 7.39%. YTD average is 7.14% (-0.24%pp), weighed down by the Feb dip. Gap to 9.37% target: <strong>+2.24%pp</strong> (need +0.23%pp/month over 10 months).</p>
@@ -702,6 +730,6 @@
 </ul>
 <p>Formula: <code>contribution = (account Mar SoI × share of vertical Mar spend) − (account baseline SoI × share of vertical baseline spend)</code></p>
 </blockquote>
-<p><em>Generated 2026-03-14 18:41. All SoI values are spend-weighted. Metrics use March (MTD) average (Mar 1 – 2026-03-13) vs baseline unless noted. Monthly trajectory and Section 1 table show Jan–Mar for context.</em></p>
+<p><em>Generated 2026-03-14 19:05. All SoI values are spend-weighted. Metrics use March (MTD) average (Mar 1 – 2026-03-13) vs baseline unless noted. Monthly trajectory and Section 1 table show Jan–Mar for context.</em></p>
 </body>
 </html>
