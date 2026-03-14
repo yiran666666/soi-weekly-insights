@@ -88,11 +88,11 @@
 </style>
 </head>
 <body>
-<div class="nav-bar">
+<div class="nav-bar" id="topnav">
   <span class="brand">China GDS</span>
   <a href="../index.html">Home</a>
 </div>
-<a class="back-link" href="../index.html">&larr; Back to home</a>
+<a class="back-link" id="backlink" href="../index.html">&larr; Back to home</a>
 <h1>Weekly Insights: 2026-W11 (as of 2026-03-13)</h1>
 <h2>TLDR</h2>
 <p><strong>Overall:</strong> March (MTD) SoI is <strong>7.39%</strong> (+0.02%pp vs 7.37% baseline), the strongest month YTD. Monthly trajectory: 2026-01: 7.31% -&gt; 2026-02: 6.83% -&gt; 2026-03: 7.39%. YTD average is 7.14% (-0.24%pp), weighed down by the Feb dip. Gap to 9.37% target: <strong>+2.24%pp</strong> (need +0.23%pp/month over 10 months).</p>
@@ -754,6 +754,12 @@
 </ul>
 <p>Formula: <code>contribution = (account Mar SoI × share of vertical Mar spend) − (account baseline SoI × share of vertical baseline spend)</code></p>
 </blockquote>
-<p><em>Generated 2026-03-14 21:23. All SoI values are spend-weighted. Metrics use March (MTD) average (Mar 1 – 2026-03-13) vs baseline unless noted. Monthly trajectory and Section 1 table show Jan–Mar for context.</em></p>
+<p><em>Generated 2026-03-14 21:29. All SoI values are spend-weighted. Metrics use March (MTD) average (Mar 1 – 2026-03-13) vs baseline unless noted. Monthly trajectory and Section 1 table show Jan–Mar for context.</em></p>
+<script>
+if (window.self !== window.top) {
+  document.getElementById('topnav').style.display = 'none';
+  document.getElementById('backlink').style.display = 'none';
+}
+</script>
 </body>
 </html>

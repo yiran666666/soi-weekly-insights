@@ -88,11 +88,11 @@
 </style>
 </head>
 <body>
-<div class="nav-bar">
+<div class="nav-bar" id="topnav">
   <span class="brand">China GDS</span>
   <a href="../index.html">Home</a>
 </div>
-<a class="back-link" href="../index.html">&larr; Back to home</a>
+<a class="back-link" id="backlink" href="../index.html">&larr; Back to home</a>
 <h1>Weekly Update — January 30, 2026</h1>
 <h2>Gaming Highlights</h2>
 <ul>
@@ -106,5 +106,11 @@
 <li>Loom partnership showing continued momentum</li>
 <li>Midas and RE (Reengagement) initiatives ongoing</li>
 </ul>
+<script>
+if (window.self !== window.top) {
+  document.getElementById('topnav').style.display = 'none';
+  document.getElementById('backlink').style.display = 'none';
+}
+</script>
 </body>
 </html>

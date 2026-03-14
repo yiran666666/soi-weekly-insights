@@ -88,11 +88,11 @@
 </style>
 </head>
 <body>
-<div class="nav-bar">
+<div class="nav-bar" id="topnav">
   <span class="brand">China GDS</span>
   <a href="../index.html">Home</a>
 </div>
-<a class="back-link" href="../index.html">&larr; Back to home</a>
+<a class="back-link" id="backlink" href="../index.html">&larr; Back to home</a>
 <h1>Weekly Update — January 18, 2026</h1>
 <h2>Gaming — KPI Framework</h2>
 <ul>
@@ -105,19 +105,25 @@
 <ul>
 <li><a href="https://docs.google.com/presentation/d/1Z9fHLOxMo2Mm8VYamS83-AZA9E2YHERHEq3bDXLicMk/edit?slide=id.g39980d16585_1_727">IAP Gaming Updates Presentation</a></li>
 <li>Holiday season impact positive across both iOS/Android (except Playrix Android)</li>
-<li>Nexon (KOR) massive scale-up in December; revenue data not shared due to conservative policy</li>
+<li>Nexon (KOR) massive scale-up in December</li>
 <li>MoonActive: 70% Android / 50% iOS spend on RE in December</li>
 <li>APAC now represents 4 of top 10 clients by spend (3-month period)</li>
 <li><strong>Delta Index</strong> metric introduced: SoR Delta / Spend Delta; values &gt;= 1.5 indicate disproportionate Moloco impact from budget cuts</li>
 </ul>
 <h2>Advertiser Focus</h2>
 <ul>
-<li><strong>Playsimple</strong> (India): IAA Network Effects test driving improved ROAS; restarted unattributed postback sharing; relaunched iOS; consolidated duplicate campaigns. <a href="https://docs.google.com/presentation/d/12KDnCzuJzJDeVARlJ41zdaq8RjmnuA8oXZG_BwpQx7Q/edit?slide=id.g36d971d75af_0_71">Case study</a></li>
-<li><strong>Mygames &amp; King</strong>: Testing new Reengagement audience creation using proprietary postback data (GDS/PM/CSE partnership)</li>
+<li><strong>Playsimple</strong> (India): IAA Network Effects test driving improved ROAS. <a href="https://docs.google.com/presentation/d/12KDnCzuJzJDeVARlJ41zdaq8RjmnuA8oXZG_BwpQx7Q/edit?slide=id.g36d971d75af_0_71">Case study</a></li>
+<li><strong>Mygames &amp; King</strong>: Testing new Reengagement audience creation using proprietary postback data</li>
 </ul>
 <h2>Related Resources</h2>
 <ul>
 <li><a href="https://docs.google.com/document/d/1g4OiVIPDxT1NF0TUIn-ALE970eL0vMprrnC_axtT64s">APAC GDS Standup Notes</a></li>
 </ul>
+<script>
+if (window.self !== window.top) {
+  document.getElementById('topnav').style.display = 'none';
+  document.getElementById('backlink').style.display = 'none';
+}
+</script>
 </body>
 </html>

@@ -88,11 +88,11 @@
 </style>
 </head>
 <body>
-<div class="nav-bar">
+<div class="nav-bar" id="topnav">
   <span class="brand">China GDS</span>
   <a href="../index.html">Home</a>
 </div>
-<a class="back-link" href="../index.html">&larr; Back to home</a>
+<a class="back-link" id="backlink" href="../index.html">&larr; Back to home</a>
 <h1>Weekly Update — February 9, 2026</h1>
 <h2>Gaming / NBS / Consumer</h2>
 <ul>
@@ -100,5 +100,11 @@
 <li><strong>RMG misclassification reminder:</strong> apps affected should correct labels in MCP under Edit App &gt; RMG Classification</li>
 <li><a href="https://docs.google.com/spreadsheets/d/1qU6MQ1J0rdxDJEg9Hu_YCRdbSICiCixk4e-dEhJlA00/edit?gid=0">RMG misclassification list</a></li>
 </ul>
+<script>
+if (window.self !== window.top) {
+  document.getElementById('topnav').style.display = 'none';
+  document.getElementById('backlink').style.display = 'none';
+}
+</script>
 </body>
 </html>

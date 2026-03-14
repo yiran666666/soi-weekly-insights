@@ -88,11 +88,11 @@
 </style>
 </head>
 <body>
-<div class="nav-bar">
+<div class="nav-bar" id="topnav">
   <span class="brand">China GDS</span>
   <a href="../index.html">Home</a>
 </div>
-<a class="back-link" href="../index.html">&larr; Back to home</a>
+<a class="back-link" id="backlink" href="../index.html">&larr; Back to home</a>
 <h1>Weekly Update — March 9, 2026</h1>
 <h2>Campaigns Stuck in Install Model</h2>
 <ul>
@@ -101,5 +101,11 @@
 <li><a href="https://docs.google.com/spreadsheets/d/1z2PqH-IcphToyXGXQ59NKuieYlGL3AclOCkvrOV16jE/edit?gid=2079723092">Full campaign list</a></li>
 <li>Note: List includes new bundles/events expected to enter action/revenue phases based on D7 postback availability</li>
 </ul>
+<script>
+if (window.self !== window.top) {
+  document.getElementById('topnav').style.display = 'none';
+  document.getElementById('backlink').style.display = 'none';
+}
+</script>
 </body>
 </html>
