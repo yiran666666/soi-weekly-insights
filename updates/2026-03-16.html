@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update — 2026-03-16</title>
+<style>
+  :root {
+    --text: #1d1d1f; --text-secondary: #86868b; --text-tertiary: #6e6e73;
+    --bg: #fbfbfd; --bg-card: #fff; --border: #d2d2d7; --border-light: #e8e8ed;
+    --accent: #0071e3; --accent-hover: #0077ed; --accent-bg: #f5f5f7;
+    --green: #34c759; --red: #ff3b30;
+  }
+  @media print {
+    .nav-bar, .back-link { display: none !important; }
+    body { font-size: 10px; padding: 0; background: #fff; }
+    h2 { page-break-before: auto; }
+    table { font-size: 8px; }
+    img { max-width: 100% !important; page-break-inside: avoid; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display',
+                 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    max-width: 1080px; margin: 0 auto; padding: 0 24px 80px;
+    color: var(--text); line-height: 1.58; background: var(--bg);
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  }
+  .nav-bar {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(251,251,253,0.72); backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    margin: 0 -24px; padding: 12px 24px; border-bottom: 0.5px solid var(--border);
+    display: flex; align-items: center; gap: 20px;
+  }
+  .nav-bar a { color: var(--text); text-decoration: none; font-size: 12px; }
+  .nav-bar a:hover { color: var(--accent); }
+  .nav-bar .brand { font-weight: 600; font-size: 14px; letter-spacing: -0.2px; }
+  .back-link {
+    display: inline-block; margin: 32px 0 0; font-size: 14px;
+    color: var(--accent); text-decoration: none;
+  }
+  .back-link:hover { text-decoration: underline; }
+  h1 {
+    font-size: 40px; font-weight: 700; color: var(--text); margin: 32px 0 6px;
+    letter-spacing: -0.8px; line-height: 1.1;
+  }
+  h2 {
+    font-size: 24px; font-weight: 600; color: var(--text); margin: 48px 0 16px;
+    letter-spacing: -0.3px; border-bottom: none;
+  }
+  h3 { font-size: 17px; font-weight: 600; color: var(--text); margin: 28px 0 8px; }
+  h4 { font-size: 15px; font-weight: 600; color: var(--text); margin: 20px 0 6px; }
+  p, li { font-size: 14px; color: var(--text-secondary); margin-bottom: 10px; }
+  p strong, li strong { color: var(--text); }
+  table {
+    border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 13px;
+    border-radius: 12px; overflow: hidden;
+    border: 0.5px solid var(--border);
+  }
+  th {
+    background: var(--accent-bg); color: var(--text-tertiary); font-weight: 500;
+    padding: 10px 14px; text-align: left; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.3px; border-bottom: 0.5px solid var(--border);
+  }
+  td { padding: 10px 14px; border-bottom: 0.5px solid var(--border-light); color: var(--text); }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: var(--accent-bg); }
+  blockquote {
+    border-left: 3px solid var(--accent); margin: 20px 0; padding: 16px 20px;
+    background: var(--accent-bg); border-radius: 0 12px 12px 0;
+    font-size: 13px; color: var(--text-secondary);
+  }
+  blockquote strong { color: var(--text); }
+  hr { border: none; height: 0.5px; background: var(--border); margin: 40px 0; }
+  img {
+    max-width: 100%; height: auto; margin: 16px 0; border-radius: 12px;
+    border: 0.5px solid var(--border-light);
+  }
+  code {
+    background: var(--accent-bg); padding: 3px 7px; border-radius: 5px; font-size: 12px;
+    font-family: 'SF Mono', SFMono-Regular, ui-monospace, Menlo, monospace;
+    color: var(--text-tertiary);
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul, ol { padding-left: 22px; }
+  ul ul { margin-top: 4px; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div class="nav-bar" id="topnav">
+  <span class="brand">China GDS</span>
+  <a href="../index.html">Home</a>
+</div>
+<a class="back-link" id="backlink" href="../index.html">&larr; Back to home</a>
+<h1>Weekly Update &mdash; March 16, 2026</h1>
+
+<h2>Spend Summary</h2>
+
+<h3>Non-IAA overall</h3>
+<ul>
+<li>Non-IAA grew <strong>+2.5% W/W (+$467k)</strong>.</li>
+<li>Growth was led by <strong>Gaming: +4.4% W/W (+$893k)</strong>.
+  <ul>
+  <li><strong>Netmarble (KOR):</strong> +$631k from a new title launch, contributing ~70% of Gaming uplift.</li>
+  <li><strong>Madhouse (CHN, "Last Asylum"):</strong> +$264k, contributing the remaining ~30%.</li>
+  </ul>
+</li>
+</ul>
+
+<h3>By OS</h3>
+<ul>
+<li><strong>Android:</strong> +2.5% W/W (+$467k), fully driven by Netmarble (+$529k).</li>
+<li><strong>iOS:</strong> +1.6% W/W (+$436k), primarily driven by MFG &ndash; Google Gemini (+$397k).</li>
+</ul>
+
+<h3>IAA overall</h3>
+<ul>
+<li>IAA (including hybrid IAA/IAP) grew <strong>+4.2% W/W (+$551k)</strong>.</li>
+<li>Growth was entirely driven by non&#8209;Hungry Studio advertisers: <strong>+$1.0m W/W (+13.6%)</strong>, offsetting a Hungry Studio pullback of &minus;$453k (&minus;7.7%), as Hungry reverted to its $5.3m&ndash;$5.5m baseline from the past 5 weeks after last week&rsquo;s spike.</li>
+<li>Weekly IAA incremental growth was broad-based:
+  <ul>
+  <li><strong>Goodroid (JPN):</strong> +$191k, contributing roughly one-third of the weekly IAA uplift.</li>
+  <li><strong>Lessmore (EMEA):</strong> +$181k, contributing roughly another one-third.</li>
+  <li><strong>Bravestar (SGP):</strong> +$90k.</li>
+  <li><strong>Madhouse (CHN):</strong> +$85k.</li>
+  </ul>
+</li>
+<li>IAA growth is broadening across the advertiser base:
+  <ul>
+  <li>Active IAA apps increased <strong>+11% W/W</strong> to 585 apps (+58).</li>
+  <li>Apps averaging $1k+/day in IAA spend increased <strong>+7% W/W</strong> to 218 apps (+14).</li>
+  </ul>
+</li>
+</ul>
+
+<hr>
+
+<h2>New Sales Enablement Resource</h2>
+<ul>
+<li>The <a href="https://docs.google.com/presentation/d/1dj7d9YUgRRopgAvyDhTNNxKkG9eBsoLjkZINugSlnL0/edit?usp=sharing">[External] IAA Campaign Checklist</a> is now live. Sales teams should proactively share this 1-pager with clients to align on setup steps and best practices, ensuring all new IAA campaigns are set up for success.</li>
+</ul>
+
+<hr>
+
+<h2>Moloco Blueprint Launch (Campaign Health Framework &amp; Activation)</h2>
+<p><strong>TL;DR:</strong> Moloco Blueprint&mdash;a data-backed campaign health scoring framework&mdash;is now launched with internal dashboards, activation playbooks, and region-specific lead lists to drive consolidation and supply unblocking across APAC/EMEA/AMER.</p>
+
+<h3>Details</h3>
+<ul>
+<li><strong>Framework &amp; content:</strong> Blueprint combines multiple best-practice signals into a 0&ndash;100 health score across five pillars to diagnose performance issues and standardize campaign setup quality; supporting content includes <a href="https://docs.google.com/presentation/d/1-a8YCFrtP4tFmMHM0d-YRSMFCq9tI3_hb7KoijQPx4s/edit?slide=id.g3cab9f2303e_0_929#slide=id.g3cab9f2303e_0_929">go/Blueprint biz dashboards</a>, an <a href="https://docs.google.com/presentation/d/1-a8YCFrtP4tFmMHM0d-YRSMFCq9tI3_hb7KoijQPx4s/edit?slide=id.g3cab9f2303e_0_929#slide=id.g3cab9f2303e_0_929">external narrative deck</a>, <a href="https://docs.google.com/document/d/19ejEpoXFW0rKGVR_SaXkuiC2KVGNZMrfRlGJnChj9UI/edit?tab=t.yt6a04iwjbqy#heading=h.v5huqz2roxgi">comms doc</a>, <a href="https://docs.google.com/document/d/19ejEpoXFW0rKGVR_SaXkuiC2KVGNZMrfRlGJnChj9UI/edit?tab=t.0#heading=h.vge36495u2g2">metric definitions</a>, <a href="https://docs.google.com/document/d/19ejEpoXFW0rKGVR_SaXkuiC2KVGNZMrfRlGJnChj9UI/edit?tab=t.hey984ggzew2#heading=h.2vw96ndctbjf">Sales+GDS activation playbook</a>, and <a href="https://docs.google.com/document/d/19ejEpoXFW0rKGVR_SaXkuiC2KVGNZMrfRlGJnChj9UI/edit?tab=t.1lwd44uajs0s#heading=h.65ddypn4vkuy">objection handling guidelines</a>.</li>
+<li>We are following up on the data access to the <a href="https://docs.google.com/presentation/d/1-a8YCFrtP4tFmMHM0d-YRSMFCq9tI3_hb7KoijQPx4s/edit?slide=id.g3cab9f2303e_0_929#slide=id.g3cab9f2303e_0_929">go/Blueprint biz dashboards</a>.</li>
+<li><strong>Activation &amp; lead lists:</strong> Core lead lists have been built per region&mdash;<a href="https://docs.google.com/spreadsheets/d/1uVU_dFvF7zP7JYAuwAwqkpp3YZS2AOshnUXva8nsNNM/edit?gid=152657162#gid=152657162">APAC</a>, <a href="https://docs.google.com/spreadsheets/d/1Kfg7hpWrY15rMJIibtxNE0IqlTFIAXyklR5Hv6p5-Yo/edit?gid=810956431#gid=810956431">EMEA</a>, <a href="https://docs.google.com/spreadsheets/d/1tAFXAlWluU7FJurbZMVHdAaqVatTxnyzQFQWu8c92AY/edit?gid=380106644#gid=380106644">AMER</a>&mdash;and loaded into Salesforce (EMEA/AMER) for tracking, with a <a href="https://colab.research.google.com/drive/1W2idKrcIqhxwbPybYdnHE1N0sLGT9KhZ#scrollTo=G7Dp0bJ5ZPW-">GDS Colab tool</a> to compute internal bid overlap and generate pod-specific lead lists for consolidation and supply-unblocking pushes.</li>
+</ul>
+
+<script>
+if (window.self !== window.top) {
+  document.getElementById('topnav').style.display = 'none';
+  document.getElementById('backlink').style.display = 'none';
+}
+</script>
+</body>
+</html>
