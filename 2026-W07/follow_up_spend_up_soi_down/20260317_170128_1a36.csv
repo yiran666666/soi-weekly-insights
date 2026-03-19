@@ -1,0 +1,134 @@
+account,app_name,period,total_spend,avg_daily_spend,moloco_installs,non_moloco_installs,soi_pct
+Learnings,--- TOTAL ---,1_Benchmark,176173.81,25167.69,103478,10888905,0.94
+Learnings,--- TOTAL ---,2_Jan,1210105.15,39035.65,554959,51649161,1.06
+Learnings,--- TOTAL ---,3_Feb,2237230.67,79901.1,600105,69769279,0.85
+Learnings,--- TOTAL ---,4_Mar_MTD,1198581.51,92198.58,264535,35486514,0.74
+Learnings,Bible Coloring Paint By Number,1_Benchmark,858.8,122.69,220,14548,1.49
+Learnings,Bible Coloring Paint by Number,1_Benchmark,841.21,168.24,62,5281,1.16
+Learnings,Color Aura: Paint by Number,1_Benchmark,4199.38,599.91,840,50792,1.63
+Learnings,Color Aura: Paint by Number,2_Jan,31774.19,1024.97,5550,200391,2.69
+Learnings,Color Aura: Paint by Number,3_Feb,21968.02,784.57,2995,101303,2.87
+Learnings,Color Aura: Paint by Number,4_Mar_MTD,2244.03,172.62,323,20687,1.54
+Learnings,Jigsawcard Solitaire Puzzle,2_Jan,10192.06,536.42,9121,470926,1.9
+Learnings,Jigsawcard Solitaire Puzzle,3_Feb,28479.28,1017.12,6862,593132,1.14
+Learnings,Jigsawcard Solitaire Puzzle,4_Mar_MTD,12882.14,990.93,2867,254447,1.11
+Learnings,Jigsawscapes® - Jigsaw Puzzles,1_Benchmark,5733.99,819.14,2726,587242,0.46
+Learnings,Jigsawscapes® - Jigsaw Puzzles,2_Jan,36693.17,1183.65,18147,2542397,0.71
+Learnings,Jigsawscapes® - Jigsaw Puzzles,3_Feb,21718.29,775.65,11372,1884757,0.6
+Learnings,Jigsawscapes® - Jigsaw Puzzles,4_Mar_MTD,9757.07,750.54,3682,1363746,0.27
+Learnings,Match Busters 3D Matching Game,1_Benchmark,351.89,50.27,56,22009,0.25
+Learnings,Match Busters 3D Matching Game,2_Jan,1554.45,50.14,329,100241,0.33
+Learnings,Match Busters 3D Matching Game,3_Feb,1398.76,49.96,200,77079,0.26
+Learnings,Match Busters 3D Matching Game,4_Mar_MTD,641.5,49.35,102,31911,0.32
+Learnings,Mystery Town - Merge & Cases,1_Benchmark,21806.51,3115.22,992,93132,1.05
+Learnings,Mystery Town - Merge & Cases,2_Jan,107176.79,3457.32,8081,477642,1.66
+Learnings,Mystery Town - Merge & Cases,3_Feb,421007.74,15035.99,24557,248769,8.98
+Learnings,Mystery Town - Merge & Cases,4_Mar_MTD,166129.49,12779.19,8783,103270,7.84
+Learnings,Paint by Number Coloring Game,1_Benchmark,9328.38,1332.63,6845,124272,5.22
+Learnings,Paint by Number Coloring Game,2_Jan,50853.86,1640.45,24959,433004,5.45
+Learnings,Paint by Number Coloring Game,3_Feb,18044.25,644.44,11025,353810,3.02
+Learnings,Paint by Number Coloring Game,4_Mar_MTD,6480.24,498.48,4581,168378,2.65
+Learnings,Solitaire - Classic Card Games,1_Benchmark,12272.08,1753.15,24039,143004,14.39
+Learnings,Solitaire - Classic Card Games,2_Jan,43194.94,1393.39,81922,726370,10.14
+Learnings,Solitaire - Classic Card Games,3_Feb,24152.69,862.6,41589,738330,5.33
+Learnings,Solitaire - Classic Card Games,4_Mar_MTD,12827.23,986.71,16656,1107703,1.48
+Learnings,Solitaire Classic Puzzle Game,1_Benchmark,2675.48,382.21,1772,10848,14.04
+Learnings,Solitaire Classic Puzzle Game,2_Jan,14357.43,463.14,10398,71279,12.73
+Learnings,Solitaire Classic Puzzle Game,3_Feb,15498.47,553.52,10221,74998,11.99
+Learnings,Solitaire Classic Puzzle Game,4_Mar_MTD,8440.02,649.23,4246,54503,7.23
+Learnings,Solitaire Word Fun!,3_Feb,2659.51,166.22,346,45041,0.76
+Learnings,Solitaire Word Fun!,4_Mar_MTD,5088.38,391.41,973,57164,1.67
+Learnings,Sudoku - Brain Puzzle Games,1_Benchmark,3504.23,500.6,992,204804,0.48
+Learnings,Sudoku - Brain Puzzle Games,2_Jan,15534.3,501.11,3565,803690,0.44
+Learnings,Sudoku - Brain Puzzle Games,3_Feb,20582.61,735.09,5446,633006,0.85
+Learnings,Sudoku - Brain Puzzle Games,4_Mar_MTD,11294.94,868.84,4000,284871,1.38
+Learnings,Sudoku - Classic Sudoku Puzzle,1_Benchmark,7434.15,1062.02,7926,545586,1.43
+Learnings,Sudoku - Classic Sudoku Puzzle,2_Jan,38653.34,1246.88,29935,2478864,1.19
+Learnings,Sudoku - Classic Sudoku Puzzle,3_Feb,47573.94,1699.07,24731,2048776,1.19
+Learnings,Sudoku - Classic Sudoku Puzzle,4_Mar_MTD,24168.38,1859.11,10632,799673,1.31
+Learnings,Tile Explorer - Triple Match,3_Feb,13657.81,546.31,3675,27792831,0.01
+Learnings,Tile Explorer - Triple Match,4_Mar_MTD,17965.06,1381.93,1665,14558049,0.01
+Learnings,Tile Explorer: Tiles Clear!,2_Jan,5630.53,511.87,1372,694040,0.2
+Learnings,Tile Explorer: Tiles Clear!,3_Feb,136422.13,4872.22,27613,1407061,1.92
+Learnings,Tile Explorer: Tiles Clear!,4_Mar_MTD,183474.96,14113.46,25019,588399,4.08
+Learnings,Vita Mahjong,1_Benchmark,91950.11,13135.73,51413,8758669,0.58
+Learnings,Vita Mahjong,2_Jan,703189.92,22683.55,292421,39980756,0.73
+Learnings,Vita Mahjong,3_Feb,1264162.9,45148.67,390080,31995283,1.2
+Learnings,Vita Mahjong,4_Mar_MTD,688425.56,52955.81,165799,15096905,1.09
+Learnings,Vita Solitaire for Seniors,1_Benchmark,1046.84,149.55,1640,39798,3.96
+Learnings,Vita Solitaire for Seniors,2_Jan,9358.47,301.89,7497,369221,1.99
+Learnings,Vita Solitaire for Seniors,3_Feb,5892.71,210.45,6468,296492,2.13
+Learnings,Vita Solitaire for Seniors,4_Mar_MTD,3882.42,298.65,2404,153964,1.54
+Learnings,Wood Block Puzzle: Brain Games,3_Feb,1092.88,84.07,566,28550,1.94
+Learnings,Wood Block Puzzle: Brain Games,4_Mar_MTD,5231.06,402.39,2297,41656,5.23
+Learnings,Zen Color - Color By Number,1_Benchmark,6336.63,905.23,2127,142303,1.47
+Learnings,Zen Color - Color By Number,2_Jan,34380.03,1109.03,6699,510813,1.29
+Learnings,Zen Color - Color By Number,3_Feb,22926.19,818.79,3628,305411,1.17
+Learnings,Zen Color - Color By Number,4_Mar_MTD,7881.74,606.29,1374,133613,1.02
+Learnings,Zen Word® - Relax Puzzle Game,4_Mar_MTD,6426.42,494.34,2122,291230,0.72
+Learnings,com.oakever.arrows,4_Mar_MTD,213.01,71.0,9,46421,0.02
+Learnings,com.oakever.coloraura,1_Benchmark,7834.13,1119.16,1828,146617,1.23
+Learnings,com.oakever.coloraura,2_Jan,104648.36,3375.75,26393,700265,3.63
+Learnings,com.oakever.coloraura,3_Feb,160564.05,5734.43,27518,390935,6.58
+Learnings,com.oakever.coloraura,4_Mar_MTD,23887.32,1837.49,6947,135529,4.88
+Learnings,com.oakever.jigsawcard,2_Jan,2913.33,153.33,28565,1080115,2.58
+Learnings,com.oakever.jigsawcard,3_Feb,281.06,140.53,13,87253,0.01
+Learnings,com.oakever.solitaire.associations.master,3_Feb,9147.31,457.37,1200,335206,0.36
+Learnings,com.oakever.solitaire.associations.master,4_Mar_MTD,1240.56,310.14,54,60458,0.09
+MICROFUN,--- TOTAL ---,1_Benchmark,428884.92,61269.27,79703,1095761,6.78
+MICROFUN,--- TOTAL ---,2_Jan,2113052.74,68162.99,460466,8387616,5.2
+MICROFUN,--- TOTAL ---,3_Feb,3053688.64,109060.31,491847,6732766,6.81
+MICROFUN,--- TOTAL ---,4_Mar_MTD,1276005.7,98154.28,170492,2770709,5.8
+MICROFUN,Flambé: Merge & Cook,3_Feb,124589.49,4791.9,67057,387437,14.75
+MICROFUN,Flambé: Merge & Cook,4_Mar_MTD,64385.51,4952.73,7676,154293,4.74
+MICROFUN,Flambé: Merge and Cook,3_Feb,133148.43,5121.09,21081,310278,6.36
+MICROFUN,Flambé: Merge and Cook,4_Mar_MTD,77877.56,5990.58,8066,115247,6.54
+MICROFUN,Gossip Harbor®: Merge & Story,1_Benchmark,428884.92,61269.27,79703,1095761,6.78
+MICROFUN,Gossip Harbor®: Merge & Story,2_Jan,2113052.74,68162.99,460466,8387616,5.2
+MICROFUN,Gossip Harbor®: Merge & Story,3_Feb,2795950.71,99855.38,403709,6035051,6.27
+MICROFUN,Gossip Harbor®: Merge & Story,4_Mar_MTD,1133742.64,87210.97,154750,2501169,5.83
+Mattel163_China,--- TOTAL ---,1_Benchmark,5881.83,840.26,1258,49992,2.45
+Mattel163_China,--- TOTAL ---,2_Jan,37742.17,1217.49,7148,223265,3.1
+Mattel163_China,--- TOTAL ---,3_Feb,46172.39,1649.01,9871,2398469,0.41
+Mattel163_China,--- TOTAL ---,4_Mar_MTD,55146.91,4242.07,13101,2469120,0.53
+Mattel163_China,Skip-Bo™: Solitaire Card Game,1_Benchmark,5881.83,840.26,1258,49992,2.45
+Mattel163_China,Skip-Bo™: Solitaire Card Game,2_Jan,37742.17,1217.49,7148,223265,3.1
+Mattel163_China,Skip-Bo™: Solitaire Card Game,3_Feb,40546.5,1448.09,7872,259974,2.94
+Mattel163_China,Skip-Bo™: Solitaire Card Game,4_Mar_MTD,29192.27,2245.56,3463,105075,3.19
+Mattel163_China,UNO!™,3_Feb,5625.89,511.44,1999,2138495,0.09
+Mattel163_China,UNO!™,4_Mar_MTD,25954.64,1996.51,9638,2364045,0.41
+TIKTOK_US,--- TOTAL ---,1_Benchmark,558791.04,79827.29,100541,39578796,0.25
+TIKTOK_US,--- TOTAL ---,2_Jan,2545715.13,82119.84,385628,242607273,0.16
+TIKTOK_US,--- TOTAL ---,3_Feb,2592016.53,92572.02,315077,286415280,0.11
+TIKTOK_US,--- TOTAL ---,4_Mar_MTD,1292768.16,99443.7,142537,130004176,0.11
+TIKTOK_US,TikTok,1_Benchmark,544682.77,77811.82,92979,38685072,0.24
+TIKTOK_US,TikTok,2_Jan,2484075.43,80131.47,354717,238601640,0.15
+TIKTOK_US,TikTok,3_Feb,2554922.61,91247.24,308039,283524655,0.11
+TIKTOK_US,TikTok,4_Mar_MTD,1238831.31,95294.72,132166,122156524,0.11
+TIKTOK_US,TikTok Lite - Faster TikTok,1_Benchmark,14108.26,2015.47,7562,893724,0.84
+TIKTOK_US,TikTok Lite - Faster TikTok,2_Jan,61639.7,1988.38,30911,4005633,0.77
+TIKTOK_US,TikTok Lite - Faster TikTok,3_Feb,37093.92,1324.78,7038,2890625,0.24
+TIKTOK_US,TikTok Lite - Faster TikTok,4_Mar_MTD,25486.55,1960.5,4382,1796431,0.24
+TIKTOK_US,TikTok ティックトック,4_Mar_MTD,28450.29,2370.86,5989,6051221,0.1
+ZerooGravity,--- TOTAL ---,1_Benchmark,77701.38,11100.2,3392,54651,5.84
+ZerooGravity,--- TOTAL ---,2_Jan,409078.62,13196.08,20854,630342,3.2
+ZerooGravity,--- TOTAL ---,3_Feb,543532.94,19411.89,25208,772550,3.16
+ZerooGravity,--- TOTAL ---,4_Mar_MTD,350000.64,26923.13,13843,276236,4.77
+ZerooGravity,Carnival Tycoon: Coin Games,2_Jan,1584.19,132.02,2155,224955,0.95
+ZerooGravity,Carnival Tycoon: Coin Games,3_Feb,11041.18,394.33,1963,313244,0.62
+ZerooGravity,Carnival Tycoon: Coin Games,4_Mar_MTD,1534.82,118.06,166,70948,0.23
+ZerooGravity,Cash Tornado™ Slots - Casino,1_Benchmark,58485.33,8355.05,2515,38082,6.2
+ZerooGravity,Cash Tornado™ Slots - Casino,2_Jan,279884.61,9028.54,12390,187505,6.2
+ZerooGravity,Cash Tornado™ Slots - Casino,3_Feb,323707.03,11560.97,13976,166753,7.73
+ZerooGravity,Cash Tornado™ Slots - Casino,4_Mar_MTD,209421.48,16109.34,7600,67898,10.07
+ZerooGravity,Jackpot Friends™ Slots Casino,4_Mar_MTD,9064.11,697.24,596,21685,2.67
+ZerooGravity,Jackpot Friends™-Slots Casino,1_Benchmark,19216.06,2745.15,877,16569,5.03
+ZerooGravity,Jackpot Friends™-Slots Casino,2_Jan,102492.41,3306.21,5020,76370,6.17
+ZerooGravity,Jackpot Friends™-Slots Casino,3_Feb,102357.96,3655.64,3398,53626,5.96
+ZerooGravity,Jackpot Friends™-Slots Casino,4_Mar_MTD,50334.52,3871.89,1668,18578,8.24
+ZerooGravity,Jackpot Master™ Slots - Casino,2_Jan,15251.18,953.2,941,103468,0.9
+ZerooGravity,Jackpot Master™ Slots - Casino,3_Feb,59334.21,2119.08,3106,163057,1.87
+ZerooGravity,Jackpot Master™ Slots - Casino,4_Mar_MTD,29575.93,2275.07,1656,69983,2.31
+ZerooGravity,Jackpot Master™ Slots-Casino,2_Jan,9866.22,704.73,348,38044,0.91
+ZerooGravity,Jackpot Master™ Slots-Casino,3_Feb,47092.56,1681.88,2765,63506,4.17
+ZerooGravity,Jackpot Master™ Slots-Casino,4_Mar_MTD,50069.78,3851.52,2157,27144,7.36
