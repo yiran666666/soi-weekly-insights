@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weekly Insights</title>
+<style>
+  :root {
+    --text: #1d1d1f; --text-secondary: #86868b; --text-tertiary: #6e6e73;
+    --bg: #fbfbfd; --bg-card: #fff; --border: #d2d2d7; --border-light: #e8e8ed;
+    --accent: #0071e3; --accent-hover: #0077ed; --accent-bg: #f5f5f7;
+    --green: #34c759; --red: #ff3b30;
+  }
+  @media print {
+    .nav-bar, .back-link { display: none !important; }
+    body { font-size: 10px; padding: 0; background: #fff; }
+    h2 { page-break-before: auto; }
+    table { font-size: 8px; }
+    img { max-width: 100% !important; page-break-inside: avoid; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display',
+                 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    max-width: 1080px; margin: 0 auto; padding: 0 24px 80px;
+    color: var(--text); line-height: 1.58; background: var(--bg);
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  }
+  .nav-bar {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(251,251,253,0.72); backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    margin: 0 -24px; padding: 12px 24px; border-bottom: 0.5px solid var(--border);
+    display: flex; align-items: center; gap: 20px;
+  }
+  .nav-bar a { color: var(--text); text-decoration: none; font-size: 12px; }
+  .nav-bar a:hover { color: var(--accent); }
+  .nav-bar .brand { font-weight: 600; font-size: 14px; letter-spacing: -0.2px; }
+  .back-link {
+    display: inline-block; margin: 32px 0 0; font-size: 14px;
+    color: var(--accent); text-decoration: none;
+  }
+  .back-link:hover { text-decoration: underline; }
+  h1 {
+    font-size: 40px; font-weight: 700; color: var(--text); margin: 32px 0 6px;
+    letter-spacing: -0.8px; line-height: 1.1;
+  }
+  h2 {
+    font-size: 24px; font-weight: 600; color: var(--text); margin: 48px 0 16px;
+    letter-spacing: -0.3px; border-bottom: none;
+  }
+  h3 { font-size: 17px; font-weight: 600; color: var(--text); margin: 28px 0 8px; }
+  h4 { font-size: 15px; font-weight: 600; color: var(--text); margin: 20px 0 6px; }
+  p, li { font-size: 14px; color: var(--text-secondary); margin-bottom: 10px; }
+  p strong, li strong { color: var(--text); }
+  table {
+    border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 13px;
+    border-radius: 12px; overflow: hidden;
+    border: 0.5px solid var(--border);
+  }
+  th {
+    background: var(--accent-bg); color: var(--text-tertiary); font-weight: 500;
+    padding: 10px 14px; text-align: left; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.3px; border-bottom: 0.5px solid var(--border);
+  }
+  td { padding: 10px 14px; border-bottom: 0.5px solid var(--border-light); color: var(--text); }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: var(--accent-bg); }
+  blockquote {
+    border-left: 3px solid var(--accent); margin: 20px 0; padding: 16px 20px;
+    background: var(--accent-bg); border-radius: 0 12px 12px 0;
+    font-size: 13px; color: var(--text-secondary);
+  }
+  blockquote strong { color: var(--text); }
+  hr { border: none; height: 0.5px; background: var(--border); margin: 40px 0; }
+  img {
+    max-width: 100%; height: auto; margin: 16px 0; border-radius: 12px;
+    border: 0.5px solid var(--border-light);
+  }
+  code {
+    background: var(--accent-bg); padding: 3px 7px; border-radius: 5px; font-size: 12px;
+    font-family: 'SF Mono', SFMono-Regular, ui-monospace, Menlo, monospace;
+    color: var(--text-tertiary);
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul, ol { padding-left: 22px; }
+  ul ul { margin-top: 4px; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div class="nav-bar" id="topnav">
+  <span class="brand">China GDS</span>
+  <a href="../index.html">Home</a>
+</div>
+<a class="back-link" id="backlink" href="../index.html">&larr; Back to home</a>
+<h1>Weekly Insights: 2026-W12 (as of 2026-03-23)</h1>
+
+<h2>Focused Accounts &mdash; Spend Up &amp; SoI Up (March vs Jan)</h2>
+<p>Five accounts with both spend and SoI increasing: <strong>CenturyGames</strong>, <strong>Wedobest</strong>, <strong>Luckymoney</strong>, <strong>Aviagames</strong>, and <strong>37GAMES</strong>.</p>
+<p><a href="https://yiran666666.github.io/soi-weekly-insights/2026-W07/follow_up_spend_up_soi_up/p0_protect_deep_dive.pdf">Deep Dive Reference (PDF)</a></p>
+
+<hr>
+
+<h2>1. Cross-Account Growth Drivers &amp; Risks</h2>
+
+<h3>New titles and bundles are the #1 growth engine</h3>
+<table>
+<thead>
+<tr><th>Account</th><th>Key New Titles / Bundles</th></tr>
+</thead>
+<tbody>
+<tr><td><strong>CenturyGames</strong></td><td>Tasty Travels: Merge Game, Kingshot / King&rsquo;s Choice, Whiteout Survival (incl. RU variant), new RU SKUs</td></tr>
+<tr><td><strong>Wedobest</strong></td><td>Order Crazy: Water Sort Puzzle, Screw Sort Puzzle&trade;&ndash;Pin Jam 3D, Wool Crush &ndash; Escape Traffic Jam, Cell Survivor, Cell Survivor (JP)</td></tr>
+<tr><td><strong>Luckymoney</strong></td><td>Lavish Luck Casino, bundle 6746437378, Neon Cash Spinner, Solitaire Thrill: Win Cash</td></tr>
+<tr><td><strong>Aviagames</strong></td><td>Solitaire Clash: Win Real Cash (core), Pocket7Games, Bingo Tour, Bingo Clash</td></tr>
+<tr><td><strong>37GAMES</strong></td><td>MU: Dark Epoch, Puzzles &amp; Chaos: Frozen Castle, RO World Journey (TW)</td></tr>
+</tbody>
+</table>
+
+<h3>Model &amp; tooling improvements are real unlocks</h3>
+<ul>
+<li><strong>IAA model upgrade (Wedobest):</strong> More IAA puzzle titles can now run and scale.</li>
+<li><strong>tKPI maturation:</strong> WoolCrush grew from test to ~7k DRR; Solitaire Clash UK moved from heavy under-spend to ~7&ndash;8k DRR.</li>
+<li><strong>Tool stack (Aviagames):</strong> CPI balancer + D1/D3 + traffic control allow image-heavy campaigns to win cheap inventory while staying within KPI.</li>
+</ul>
+
+<h3>Unlocking more supply via creative &amp; geo changes</h3>
+<ul>
+<li><strong>Aviagames &mdash; creative/inventory unlock:</strong> Previously, strict VT control + BI CPM&lt;1 filter blocked high-value supply. GDS showed that on best publishers, images account for ~50%+ of spend/inventory. After removing filters, image supply visibility and ROI improved significantly.</li>
+<li><strong>CenturyGames &mdash; geo-driven supply unlock:</strong> Historically concentrated on T0/T1 markets. Now testing T2/T3 markets and RU variants to tap additional cheaper supply while keeping T0/T1 budgets running.</li>
+<li><strong>Wedobest &mdash; creative + geo broadening:</strong> Migrated from misleading to normal creatives. Geo ladder: KR/JP/TW &rarr; regional (EU/SEA) &rarr; worldwide, progressively opening more geos.</li>
+</ul>
+
+<h3>Key structural risk: concentration on a few hero titles</h3>
+<blockquote>Per advertiser, 1&ndash;3 apps drive most DRR growth. If any hit a growth-factor, policy, or lifecycle issue, the entire account moves.</blockquote>
+
+<hr>
+
+<h2>2. Cross-Account Prevention &amp; Defence Factors</h2>
+
+<h3>Fixing measurement and attribution bugs fast</h3>
+<ul>
+<li><strong>CenturyGames:</strong> Fixed LAT revenue under-prediction, supply restrictions, attribution leakage, RMG mis-classification, and TCM/CPI oscillation. This protects large baseline DRR during T2/T3/RU and new title tests.</li>
+</ul>
+
+<h3>Framing lifecycle &amp; channel roles clearly</h3>
+<ul>
+<li><strong>Luckymoney / Winner:</strong> Position Moloco as strongest in launch and growth phases; Smartdex/ASA for mature budgets. This prevents a &ldquo;Moloco underperforming&rdquo; framing when share naturally shrinks post-Smartdex ramp.</li>
+</ul>
+
+<h3>Blueprints and playbooks for safe campaign structures</h3>
+<ul>
+<li><strong>CenturyGames:</strong> Consolidation + overlap rules for P0 structure.</li>
+<li><strong>Aviagames / Solitaire Clash:</strong> Image-heavy tKPI + CPI balancer + D1/D3 + traffic control as the safe default config.</li>
+<li><strong>Wedobest:</strong> KR/JP/TW &rarr; regional &rarr; worldwide geo ladder as the default rollout.</li>
+</ul>
+
+<h3>Guardrails on creative &amp; geo changes</h3>
+<ul>
+<li><strong>Wedobest:</strong> Moved to normal creatives with before/after performance data. Enforcing the geo ladder prevents &ldquo;tried once, failed&rdquo; dismissals.</li>
+</ul>
+
+<h3>Policy and filter diagnostics before scale decisions</h3>
+<ul>
+<li><strong>Aviagames:</strong> Top-publisher ROI + creative mix analysis proved VT + CPM&lt;1 rules blocked high-value supply. Risk of reversion is lower post-monitoring.</li>
+</ul>
+
+<h3>Clear attribution of why metrics moved</h3>
+<ul>
+<li><strong>Wedobest:</strong> Decomposed SoI gains to WaterSort/ScrewSort, and spend gains to Cell Survivor/WoolCrush + tKPI. Clean causal explanation versus black-box noise.</li>
+</ul>
+
+<h3>Codifying &ldquo;what good looks like&rdquo; early (reference curves)</h3>
+<ul>
+<li>Use early-phase DRR &amp; KPI curves from Ten Luck, MU, Solitaire Clash UK, and WoolCrush (~7k DRR) as reference launch patterns for future titles.</li>
+</ul>
+
+<hr>
+
+<h2>3. Account-Level Details</h2>
+
+<h3>CenturyGames</h3>
+<table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>DRR</td><td>$492k &rarr; <strong>$673k/day</strong></td></tr>
+<tr><td>SoI</td><td>9.79% &rarr; <strong>11.27%</strong></td></tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Growth apps:</strong> Tasty Travels: Merge Game, Kingshot / King&rsquo;s Choice, Whiteout Survival (incl. RU), Truck Star, Family Farm Adventure, Family Farm Match, Bingo Aloha, Hotel Manor.</li>
+<li><strong>What drove performance:</strong> Post-CNY push on Tasty Travel lifted spend; Kingshot continues as a big spender; Whiteout + RU SKUs add high-quality installs; smaller titles contribute incremental share.</li>
+<li><strong>Geo &amp; supply:</strong> Most big apps already worldwide. New volume from re-weighting geos (T0/T1 into T2/T3, leaning into RU pockets&mdash;high quality but small scale).</li>
+<li><strong>Modelling/structure:</strong> GDS/GM fixed LAT revenue model, attribution leakage, supply restrictions, TCM/CPI oscillation, and RMG misclassification. Learnings captured in Century performance blueprint.</li>
+<li><strong>Key risks:</strong> Tasty Travel growth sensitive to its growth factor; RU capacity-limited; without ongoing diagnostics, TCM/attribution issues could reappear.</li>
+</ul>
+<blockquote><strong>Summary:</strong> Tasty &amp; Kingshot = DRR engines; Whiteout &amp; RU SKUs = efficiency boosters; T2/T3 tests = next supply pool.</blockquote>
+
+<h3>Wedobest</h3>
+<table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>DRR</td><td>$41k &rarr; <strong>$107k/day</strong></td></tr>
+<tr><td>SoI</td><td>5.34% &rarr; <strong>8.08%</strong></td></tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Growth apps:</strong> Order Crazy: Water Sort Puzzle, Screw Sort Puzzle&trade;&ndash;Pin Jam 3D, Wool Crush &ndash; Escape Traffic Jam, Cell Survivor, Cell Survivor (JP). Legacy SKUs (Screw Sort, Water SortPuz 3D, Sheep Away) are shrinking or switching off.</li>
+<li><strong>What drove performance:</strong> Biggest uplifts from new WaterSort &amp; ScrewSort variants, Cell Survivor (global/JP), and WoolCrush (scaled with tKPI).</li>
+<li><strong>Geo &amp; supply:</strong> Clear ladder: KR/JP/TW single-geo &rarr; regional bundles (EU/SEA, similar ARPU) &rarr; worldwide. JP-specific SKUs capture strong local pockets.</li>
+<li><strong>Modelling/structure:</strong> IAA model upgrade made more IAA titles scalable; tKPI on WoolCrush scaled budget ~4k &rarr; 7k DRR; migrated from misleading to normal creatives backed by performance data.</li>
+<li><strong>Key risks:</strong> Pattern is robust but saturation/creative fatigue risk exists. Legacy SKUs are candidates for phase-out while new variants shoulder growth.</li>
+</ul>
+
+<h3>Luckymoney / Winner (RMG)</h3>
+<table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>DRR</td><td>$36.5k &rarr; <strong>$97.5k/day</strong></td></tr>
+<tr><td>SoI</td><td>6.42% &rarr; <strong>11.98%</strong></td></tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Growth apps:</strong> Lavish Luck Casino, bundle 6746437378 (~$4k &rarr; $46.6k/day), plus Neon Cash Spinner, Solitaire Thrill: Win Cash.</li>
+<li><strong>What drove performance:</strong> Massive ramp of bundle 6746437378 and Lavish Luck (~$23k &rarr; $42.7k/day) explains most growth. Smaller new bundles add high SoI but modest DRR.</li>
+<li><strong>Geo &amp; supply:</strong> iOS RMG restricted to licensed US states&mdash;&ldquo;geo expansion&rdquo; means more states + higher caps. GP bundles are global but have 2&ndash;3 month lifecycles without Smartdex, giving Moloco short high-share periods.</li>
+<li><strong>Modelling/structure:</strong> When a new iOS RMG app clears KPI, Winner ramps fast to 40&ndash;50k DRR/day on Moloco and other DSPs. After months, Smartdex (CTV) and ASA become dominant. Tests with shorter Smartdex lookback windows showed little downside.</li>
+<li><strong>Key risks:</strong> As Smartdex and ASA ramp (Winner is Smartdex&rsquo;s biggest RMG client), incremental budget naturally flows away from Moloco even if performance is good. Leverage is in launch windows for new RMG apps and GP bundle cycles, not long-term dominance on mature apps.</li>
+</ul>
+
+<h3>Aviagames</h3>
+<table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>DRR</td><td>$9.9k &rarr; <strong>$18.5k/day</strong></td></tr>
+<tr><td>SoI</td><td>2.15% &rarr; <strong>4.69%</strong></td></tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Growth apps:</strong> Solitaire Clash: Win Real Cash (flagship), Pocket7Games, Bingo Tour, Bingo Clash, 8 Ball Strike, Samsung solitaire/billiards SKUs, Bubble Buzz.</li>
+<li><strong>What drove performance:</strong> Main uplift from Solitaire Clash UK after tKPI/CPI-balancer and creative/attribution changes. Pocket7 and bingo titles add incremental DRR and SoI.</li>
+<li><strong>Geo &amp; supply:</strong> Started with UK tKPI on Solitaire Clash. Once stable (~7&ndash;8k DRR/day at good ROAS), plan to clone the same tKPI + CPI-balancer + D1/D3 + image-heavy structure to more geos.</li>
+<li><strong>Modelling/structure:</strong> Initially strict VT control and BI CPM&lt;1 filter made low-CPM images invisible. GDS analysis of top-publisher ROI + creative mix showed images account for ~50%+ of spend/inventory on best publishers and competitors invest heavily. Removed VT/CPM&lt;1 filters; rebuilt campaigns as image-heavy with CPI balancer, D1/D3, and traffic control. tKPI scaled UK Solitaire Clash (~+$9k DRR), CPI balancer added (~+$5k DRR).</li>
+<li><strong>Key risks:</strong> Canonical playbook for high-KPI, policy-constrained clients. If performance volatility makes BI nervous, filters could be re-tightened. Strong before/after story and monitoring are key.</li>
+</ul>
+
+<h3>37GAMES</h3>
+<table>
+<thead><tr><th>Metric</th><th>Value</th></tr></thead>
+<tbody>
+<tr><td>DRR</td><td>$2.2k &rarr; <strong>$6.7k/day</strong></td></tr>
+<tr><td>SoI</td><td>3.47% &rarr; <strong>3.68%</strong></td></tr>
+</tbody>
+</table>
+<ul>
+<li><strong>Growth apps:</strong> MU: Dark Epoch (no benchmark presence, quickly became ~76% of DRR with SoI &asymp; 3.8%), Puzzles &amp; Chaos: Frozen Castle, RO World Journey (TW).</li>
+<li><strong>What drove performance:</strong> New title MU: Dark Epoch launched broadly and naturally became the main driver. Puzzles &amp; Chaos and RO World Journey add smaller, stable contributions.</li>
+<li><strong>Geo &amp; supply:</strong> MU appears global/multi-region; RO World Journey is TW-focused. No complex geo strategy yet beyond launching MU broadly and keeping legacy titles running.</li>
+<li><strong>Key risks:</strong> Useful as a simple example supporting the &ldquo;new title = main DRR driver&rdquo; pattern even without complex playbooks. Main concern is scale ceiling if MU flattens and no next title is queued.</li>
+</ul>
+
+<script>
+if (window.self !== window.top) {
+  document.getElementById('topnav').style.display = 'none';
+  document.getElementById('backlink').style.display = 'none';
+}
+</script>
+</body>
+</html>
