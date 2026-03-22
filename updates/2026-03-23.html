@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update — 2026-03-23</title>
+<style>
+  :root {
+    --text: #1d1d1f; --text-secondary: #86868b; --text-tertiary: #6e6e73;
+    --bg: #fbfbfd; --bg-card: #fff; --border: #d2d2d7; --border-light: #e8e8ed;
+    --accent: #0071e3; --accent-hover: #0077ed; --accent-bg: #f5f5f7;
+    --green: #34c759; --red: #ff3b30;
+  }
+  @media print {
+    .nav-bar, .back-link { display: none !important; }
+    body { font-size: 10px; padding: 0; background: #fff; }
+    h2 { page-break-before: auto; }
+    table { font-size: 8px; }
+    img { max-width: 100% !important; page-break-inside: avoid; }
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'SF Pro Display',
+                 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    max-width: 1080px; margin: 0 auto; padding: 0 24px 80px;
+    color: var(--text); line-height: 1.58; background: var(--bg);
+    -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+  }
+  .nav-bar {
+    position: sticky; top: 0; z-index: 100;
+    background: rgba(251,251,253,0.72); backdrop-filter: saturate(180%) blur(20px);
+    -webkit-backdrop-filter: saturate(180%) blur(20px);
+    margin: 0 -24px; padding: 12px 24px; border-bottom: 0.5px solid var(--border);
+    display: flex; align-items: center; gap: 20px;
+  }
+  .nav-bar a { color: var(--text); text-decoration: none; font-size: 12px; }
+  .nav-bar a:hover { color: var(--accent); }
+  .nav-bar .brand { font-weight: 600; font-size: 14px; letter-spacing: -0.2px; }
+  .back-link {
+    display: inline-block; margin: 32px 0 0; font-size: 14px;
+    color: var(--accent); text-decoration: none;
+  }
+  .back-link:hover { text-decoration: underline; }
+  h1 {
+    font-size: 40px; font-weight: 700; color: var(--text); margin: 32px 0 6px;
+    letter-spacing: -0.8px; line-height: 1.1;
+  }
+  h2 {
+    font-size: 24px; font-weight: 600; color: var(--text); margin: 48px 0 16px;
+    letter-spacing: -0.3px; border-bottom: none;
+  }
+  h3 { font-size: 17px; font-weight: 600; color: var(--text); margin: 28px 0 8px; }
+  h4 { font-size: 15px; font-weight: 600; color: var(--text); margin: 20px 0 6px; }
+  p, li { font-size: 14px; color: var(--text-secondary); margin-bottom: 10px; }
+  p strong, li strong { color: var(--text); }
+  table {
+    border-collapse: collapse; width: 100%; margin: 20px 0; font-size: 13px;
+    border-radius: 12px; overflow: hidden;
+    border: 0.5px solid var(--border);
+  }
+  th {
+    background: var(--accent-bg); color: var(--text-tertiary); font-weight: 500;
+    padding: 10px 14px; text-align: left; font-size: 11px;
+    text-transform: uppercase; letter-spacing: 0.3px; border-bottom: 0.5px solid var(--border);
+  }
+  td { padding: 10px 14px; border-bottom: 0.5px solid var(--border-light); color: var(--text); }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: var(--accent-bg); }
+  blockquote {
+    border-left: 3px solid var(--accent); margin: 20px 0; padding: 16px 20px;
+    background: var(--accent-bg); border-radius: 0 12px 12px 0;
+    font-size: 13px; color: var(--text-secondary);
+  }
+  blockquote strong { color: var(--text); }
+  hr { border: none; height: 0.5px; background: var(--border); margin: 40px 0; }
+  img {
+    max-width: 100%; height: auto; margin: 16px 0; border-radius: 12px;
+    border: 0.5px solid var(--border-light);
+  }
+  code {
+    background: var(--accent-bg); padding: 3px 7px; border-radius: 5px; font-size: 12px;
+    font-family: 'SF Mono', SFMono-Regular, ui-monospace, Menlo, monospace;
+    color: var(--text-tertiary);
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  ul, ol { padding-left: 22px; }
+  ul ul { margin-top: 4px; margin-bottom: 4px; }
+</style>
+</head>
+<body>
+<div class="nav-bar" id="topnav">
+  <span class="brand">China GDS</span>
+  <a href="../index.html">Home</a>
+</div>
+<a class="back-link" id="backlink" href="../index.html">&larr; Back to home</a>
+<h1>Weekly Update &mdash; March 23, 2026</h1>
+
+<h2>Spend Summary</h2>
+<p><strong>TL;DR:</strong> Non-IAA +0.2% W/W (+$94k), IAA &minus;1.3% W/W (&minus;$176k) driven by Hungry Studio pullback offset by broad-based growth.</p>
+<h3>By Vertical</h3>
+<ul>
+<li><strong>Consumer +2.6% W/W (+$349k)</strong> led by Pinterest (+$185k) and Camelot-Experian (+$107k).</li>
+<li><strong>Gaming &minus;1.6% W/W (&minus;$337k)</strong> due to Netmarble (&minus;$486k), offset by Madhouse (+$168k) and Moonactive (+$161k).</li>
+<li><strong>RMG +0.7% W/W (+$82k)</strong> driven by PMG-Fanatics (+$154k).</li>
+<li><strong>CTV spend +13.9% W/W (+$87k)</strong>, 70% from PMG-Fanatics.</li>
+</ul>
+
+<hr>
+
+<h2>IAA Weekly Performance &amp; Health</h2>
+<ul>
+<li>Total IAA dipped &minus;1.3% W/W, driven by a <strong>$1.1M Hungry Studio pullback</strong>.</li>
+<li>Excluding Hungry Studio: <strong>IAA grew +11.5% W/W (+$966k)</strong>.</li>
+<li>50% of underlying increase driven by <strong>Bravestar (SGP)</strong>, <strong>Hit Apps (EMEA)</strong>, and <strong>Madhouse (CHN)</strong>.</li>
+</ul>
+<h3>Ecosystem Expansion</h3>
+<ul>
+<li>Active apps grew <strong>+11% W/W</strong> to 648 total.</li>
+<li>High-value apps ($1k+/day) grew <strong>+7% W/W</strong> to 234 total.</li>
+</ul>
+
+<hr>
+
+<h2>IAA 2026 YTD Executive Summary</h2>
+<ul>
+<li>Currently at <strong>$690.81M ARR</strong>, outperforming the $600M Q1 target and pacing toward $1Bn goal (target: Nov 30, 2026).</li>
+<li>IAA Network Effects now <strong>22% of total MA spend</strong>, up from 16% at start of year.</li>
+<li>Live IAA bundles enrolled in NE surged <strong>+60%</strong> with consistent W/W growth throughout Q1.</li>
+<li>Growth is broad-based globally; USA is the sole exception, prompting the launch of the IAA AMER Strategy H1 2026 doc.</li>
+</ul>
+
+<hr>
+
+<h2>SDK SOV: Impact on IAA Campaigns</h2>
+<h3>Key Findings</h3>
+<h4>1. SDK SOV is the clearest early predictor of IAA success</h4>
+<ul>
+<li>Near-target campaigns: ~80% SDK SOV on their tracking bundle.</li>
+<li>Underperformers: ~60% SDK SOV.</li>
+<li>SDK SOV &lt;50% is almost never seen among near-target campaigns &mdash; a red-flag zone.</li>
+<li><strong>Practical OS guidance:</strong>
+  <ul>
+  <li>iOS: aim for <strong>&ge;55% SDK SOV</strong></li>
+  <li>Android: aim for <strong>&ge;65% SDK SOV</strong></li>
+  </ul>
+</li>
+</ul>
+
+<h4>2. SDK daily spend on the bundle matters</h4>
+<ul>
+<li>From the 6th decile (~&gt;$1.5k/day SDK spend), &gt;50% of campaigns are near-target.</li>
+<li>Very low spend (~$30/day) can still work but is too noisy; <strong>$1.5k/day+</strong> is a practical benchmark.</li>
+</ul>
+
+<h4>3. Rewarded via SDK helps, but isn&rsquo;t a gate</h4>
+<ul>
+<li>Performing campaigns have ~45% vs ~35% of spend on rewarded via SDK (statistically significant).</li>
+<li>Successful campaigns exist with 0% rewarded &mdash; treat as a nice-to-have uplift, not a requirement.</li>
+</ul>
+
+<h4>4. Closed-loop/subsidy metrics are promising but post-launch only</h4>
+<ul>
+<li>Subsidy, % boosted impressions correlate positively with ROAS, but depend on live closed-loop users.</li>
+<li>Better as post-launch health signals and for future user-level analyses.</li>
+</ul>
+
+<h3>How Sales Should Use This</h3>
+<ul>
+<li><strong>Check the tracking bundle&rsquo;s SDK SOV:</strong>
+  <ul>
+  <li>Green: iOS &ge;55%, Android &ge;65% &rarr; much higher odds of near-target ROAS.</li>
+  <li>Red flag: SDK SOV &lt;50% &rarr; historically very few successes; position as high-risk / experimental.</li>
+  </ul>
+</li>
+<li><strong>Check SDK daily demand spend:</strong>
+  <ul>
+  <li>Prefer ~$1.5k/day+ (&ge;6th decile) &rarr; more than half of campaigns hit &ge;90% of target.</li>
+  </ul>
+</li>
+<li><strong>Use rewarded share as an optimization lever, not a gate:</strong>
+  <ul>
+  <li>Increasing rewarded share via SDK is directionally good, but don&rsquo;t block IAA activation because of low rewarded share.</li>
+  </ul>
+</li>
+</ul>
+
+<hr>
+
+<h2>Looker Dashboard Directory</h2>
+<ul>
+<li>Searchable reference site covering ~600 dashboards with descriptions, screenshots, and code pointers.</li>
+<li>Available at <code>go/looker-audit</code> with DSP-specific page.</li>
+<li>Built using Claude Code, Looker API, and Glean MCP integration.</li>
+</ul>
+
+<script>
+if (window.self !== window.top) {
+  document.getElementById('topnav').style.display = 'none';
+  document.getElementById('backlink').style.display = 'none';
+}
+</script>
+</body>
+</html>
