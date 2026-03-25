@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: gds-hub
+    runtime: node
+    buildCommand: npm install
+    startCommand: node server.js
+    envVars:
+      - key: PORT
+        value: 3456
+      - key: ANTHROPIC_API_KEY
+        sync: false

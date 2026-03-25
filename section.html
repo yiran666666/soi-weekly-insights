@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Section — China GDS</title>
+<style>
+  :root { --text: #1d1d1f; --text-sec: #86868b; --accent: #0071e3; --bg: #fbfbfd;
+          --border: #d2d2d7; --topbar-h: 44px; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+    background: var(--bg); min-height: 100vh; -webkit-font-smoothing: antialiased;
+  }
+  .topbar {
+    position: fixed; top: 0; left: 0; right: 0; z-index: 200;
+    height: var(--topbar-h); background: rgba(251,251,253,0.8);
+    backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px);
+    border-bottom: 0.5px solid var(--border);
+    display: flex; align-items: center; justify-content: center;
+  }
+  .topbar a { font-size: 14px; font-weight: 500; color: var(--accent); text-decoration: none; display: flex; align-items: center; gap: 6px; }
+  .topbar a:hover { text-decoration: underline; }
+
+  .page { max-width: 800px; margin: 0 auto; padding: 72px 24px 60px; }
+  .page-header { margin-bottom: 32px; }
+  .page-title { font-size: 34px; font-weight: 700; color: var(--text); letter-spacing: -0.5px; display: flex; align-items: center; gap: 12px; }
+  .page-desc { color: var(--text-sec); font-size: 15px; margin-top: 6px; line-height: 1.5; }
+
+  .toolbar { display: flex; gap: 10px; margin-bottom: 24px; }
+  .add-btn {
+    display: flex; align-items: center; gap: 6px; padding: 10px 20px; border-radius: 10px; border: none;
+    background: var(--accent); color: #fff; font-size: 14px; font-weight: 600;
+    cursor: pointer; font-family: inherit; transition: background 0.15s;
+  }
+  .add-btn:hover { background: #0062cc; }
+  .search-input {
+    flex: 1; padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px;
+    font-size: 14px; font-family: inherit; outline: none; background: #fff;
+  }
+  .search-input:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(0,113,227,0.1); }
+
+  .item-list { display: flex; flex-direction: column; gap: 12px; }
+  .item-card {
+    background: #fff; border: 0.5px solid var(--border); border-radius: 14px;
+    padding: 24px; transition: box-shadow 0.15s;
+  }
+  .item-card:hover { box-shadow: 0 2px 12px rgba(0,0,0,0.05); }
+  .item-header { display: flex; align-items: flex-start; gap: 12px; }
+  .item-header-body { flex: 1; }
+  .item-title { font-size: 17px; font-weight: 600; color: var(--text); cursor: pointer; }
+  .item-title:hover { color: var(--accent); }
+  .item-meta { font-size: 12px; color: var(--text-sec); margin-top: 4px; }
+  .item-actions { display: flex; gap: 4px; }
+  .item-actions button {
+    background: none; border: none; cursor: pointer; padding: 4px 10px;
+    font-size: 13px; color: var(--text-sec); border-radius: 6px; font-family: inherit;
+  }
+  .item-actions button:hover { background: #f0f0f5; color: var(--text); }
+  .item-actions .delete-btn:hover { color: #ff3b30; }
+
+  .item-body {
+    display: none; margin-top: 16px; padding-top: 16px; border-top: 1px solid #f0f0f5;
+    font-size: 15px; line-height: 1.7; color: #333;
+  }
+  .item-body.open { display: block; }
+  .item-body p { margin: 0.4em 0; }
+  .item-body ul, .item-body ol { margin: 0.4em 0 0.4em 1.5em; }
+  .item-body li { margin: 0.2em 0; }
+  .item-body a { color: var(--accent); text-decoration: none; }
+  .item-body a:hover { text-decoration: underline; }
+  .item-body strong { font-weight: 600; }
+  .item-body code { background: #f0f0f5; padding: 2px 6px; border-radius: 4px; font-size: 13px; }
+  .item-body pre { background: #f0f0f5; padding: 12px 16px; border-radius: 8px; overflow-x: auto; margin: 0.5em 0; }
+  .item-body pre code { background: none; padding: 0; }
+  .item-body img { max-width: 100%; border-radius: 8px; margin: 8px 0; }
+  .item-body h1, .item-body h2, .item-body h3 { margin: 0.8em 0 0.3em; color: var(--text); }
+  .item-body hr { border: none; border-top: 1px solid #f0f0f5; margin: 1em 0; }
+
+  .attachment-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 12px; }
+  .attachment-chip {
+    display: flex; align-items: center; gap: 4px; padding: 4px 12px;
+    background: #f0f0f5; border-radius: 8px; font-size: 12px; color: var(--text); text-decoration: none;
+  }
+  .attachment-chip:hover { background: #e5e5ea; }
+
+  .empty-state { text-align: center; padding: 60px 20px; color: var(--text-sec); font-size: 15px; }
+  .empty-state .empty-icon { font-size: 48px; margin-bottom: 12px; }
+
+  .modal-overlay {
+    display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4);
+    z-index: 1000; align-items: center; justify-content: center; backdrop-filter: blur(4px);
+  }
+  .modal-overlay.open { display: flex; }
+  .modal {
+    background: #fff; border-radius: 18px; padding: 32px; width: 560px; max-width: 90vw;
+    max-height: 90vh; overflow-y: auto; box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+  }
+  .modal h2 { font-size: 22px; font-weight: 700; color: var(--text); margin-bottom: 20px; }
+  .modal label { display: block; font-size: 13px; font-weight: 600; color: var(--text-sec); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.3px; }
+  .modal input[type="text"], .modal textarea {
+    width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px;
+    font-size: 15px; font-family: inherit; margin-bottom: 16px; outline: none;
+  }
+  .modal input[type="text"]:focus, .modal textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(0,113,227,0.1); }
+  .modal textarea { min-height: 200px; resize: vertical; font-size: 14px; line-height: 1.6; }
+  .hint { font-size: 12px; color: var(--text-sec); margin: -12px 0 16px; }
+  .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 8px; }
+  .modal-actions button {
+    padding: 10px 22px; border-radius: 10px; font-size: 14px; font-weight: 600;
+    cursor: pointer; border: none; font-family: inherit;
+  }
+  .btn-cancel { background: #f0f0f5; color: var(--text); }
+  .btn-cancel:hover { background: #e5e5ea; }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: #0062cc; }
+  .upload-area {
+    border: 2px dashed var(--border); border-radius: 10px; padding: 16px;
+    text-align: center; cursor: pointer; margin-bottom: 16px; color: var(--text-sec); font-size: 13px;
+  }
+  .upload-area:hover { border-color: var(--accent); color: var(--accent); }
+  .upload-area input { display: none; }
+  .uploaded-files { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  .uploaded-file {
+    display: flex; align-items: center; gap: 4px; padding: 4px 10px;
+    background: #f0f0f5; border-radius: 8px; font-size: 12px;
+  }
+  .uploaded-file .remove { cursor: pointer; color: #ff3b30; margin-left: 4px; font-weight: 700; }
+  .error-toast {
+    position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+    background: #ff3b30; color: #fff; padding: 10px 20px; border-radius: 10px;
+    font-size: 14px; font-weight: 500; z-index: 2000; display: none;
+  }
+</style>
+</head>
+<body>
+<div class="topbar"><a href="index.html">&larr; Back to Main Page</a></div>
+
+<div class="page">
+  <div class="page-header">
+    <div class="page-title" id="page-title">Loading...</div>
+    <div class="page-desc" id="page-desc"></div>
+  </div>
+  <div class="toolbar">
+    <button class="add-btn" onclick="openAddModal()">+ Add Content</button>
+    <input type="text" class="search-input" id="search-input" placeholder="Search content...">
+  </div>
+  <div class="item-list" id="item-list"></div>
+  <div class="empty-state" id="empty-state" style="display:none;">
+    <div class="empty-icon">📭</div>
+    <p>No content yet. Click "+ Add Content" to get started.</p>
+  </div>
+</div>
+
+<div class="modal-overlay" id="content-modal">
+  <div class="modal">
+    <h2 id="content-modal-title">Add Content</h2>
+    <label>Title</label>
+    <input type="text" id="content-title" placeholder="e.g. Q1 Campaign Review">
+    <label>Content <span style="font-weight:400;text-transform:none;">(Markdown supported)</span></label>
+    <textarea id="content-body" placeholder="Write your content here...&#10;&#10;Supports **bold**, *italic*, [links](url), lists, and more."></textarea>
+    <div class="hint">Tip: Use Markdown for formatting. **bold**, *italic*, - bullet lists, [link text](url)</div>
+    <label>Attachments</label>
+    <div class="upload-area" id="upload-area" onclick="document.getElementById('file-input').click()">
+      Click to upload files (images, PDFs, documents)
+      <input type="file" id="file-input" multiple>
+    </div>
+    <div class="uploaded-files" id="uploaded-files"></div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeContentModal()">Cancel</button>
+      <button class="btn-primary" id="content-save-btn" onclick="saveContent()">Publish</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="delete-modal">
+  <div class="modal">
+    <h2>Delete Content</h2>
+    <p style="color: var(--text-sec); font-size: 15px; margin-bottom: 20px;">This will permanently delete this content item.</p>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeDeleteModal()">Cancel</button>
+      <button class="btn-primary" style="background:#ff3b30;" onclick="confirmDelete()">Delete</button>
+    </div>
+  </div>
+</div>
+
+<div class="error-toast" id="error-toast"></div>
+
+<script src="auth.js"></script>
+<script>
+const params = new URLSearchParams(window.location.search);
+const sectionId = params.get('id');
+let sectionInfo = null;
+let items = [];
+let editingItemId = null;
+let deletingItemId = null;
+let uploadedAttachments = [];
+let searchQuery = '';
+
+function showError(msg) {
+  const el = document.getElementById('error-toast');
+  el.textContent = msg; el.style.display = 'block';
+  setTimeout(() => { el.style.display = 'none'; }, 3000);
+}
+
+async function init() {
+  if (!sectionId) { window.location = 'index.html'; return; }
+  await ensureUser();
+
+  const res = await fetch('/api/sections');
+  const sections = await res.json();
+  sectionInfo = sections.find(s => s.id === sectionId);
+  if (!sectionInfo) { document.getElementById('page-title').textContent = 'Section not found'; return; }
+
+  document.title = sectionInfo.title + ' — China GDS';
+  document.getElementById('page-title').innerHTML =
+    `<span style="font-size:36px">${sectionInfo.icon}</span> ${escapeHtml(sectionInfo.title)}`;
+  document.getElementById('page-desc').textContent = sectionInfo.description;
+  await loadContent();
+}
+
+async function loadContent() {
+  const res = await fetch(`/api/content/${sectionId}`);
+  items = await res.json();
+  renderItems();
+}
+
+function renderItems() {
+  const user = getCurrentUser();
+  const q = searchQuery.toLowerCase();
+  const filtered = items.filter(item => {
+    if (!q) return true;
+    return item.title.toLowerCase().includes(q) || item.body.toLowerCase().includes(q) || item.author.toLowerCase().includes(q);
+  });
+  const container = document.getElementById('item-list');
+  const empty = document.getElementById('empty-state');
+  if (filtered.length === 0) {
+    container.innerHTML = ''; empty.style.display = 'block';
+    empty.querySelector('p').textContent = items.length > 0 ? 'No items match your search.' : 'No content yet. Click "+ Add Content" to get started.';
+    return;
+  }
+  empty.style.display = 'none';
+  container.innerHTML = filtered.map(item => {
+    const date = new Date(item.createdAt).toLocaleDateString('en-US', { month: 'short', day: 'numeric', year: 'numeric' });
+    const mine = isOwner(item.author);
+    const attachHtml = (item.attachments && item.attachments.length > 0)
+      ? `<div class="attachment-list">${item.attachments.map(a =>
+          `<a class="attachment-chip" href="${a.url}" target="_blank">📎 ${escapeHtml(a.originalName)}</a>`
+        ).join('')}</div>` : '';
+    return `
+      <div class="item-card" data-id="${item.id}">
+        <div class="item-header">
+          <div class="item-header-body">
+            <div class="item-title" onclick="toggleItem('${item.id}')">${escapeHtml(item.title)}</div>
+            <div class="item-meta">${escapeHtml(item.author)} · ${date}</div>
+          </div>
+          ${mine ? `<div class="item-actions">
+            <button onclick="openEditModal('${item.id}')">Edit</button>
+            <button class="delete-btn" onclick="openDeleteModal('${item.id}')">Delete</button>
+          </div>` : ''}
+        </div>
+        <div class="item-body" id="body-${item.id}">${item.bodyHtml || ''}${attachHtml}</div>
+      </div>`;
+  }).join('');
+}
+
+window.toggleItem = function(id) {
+  const el = document.getElementById('body-' + id);
+  if (el) el.classList.toggle('open');
+};
+
+document.getElementById('search-input').addEventListener('input', function() {
+  searchQuery = this.value; renderItems();
+});
+
+window.openAddModal = function() {
+  editingItemId = null; uploadedAttachments = [];
+  document.getElementById('content-modal-title').textContent = 'Add Content';
+  document.getElementById('content-save-btn').textContent = 'Publish';
+  document.getElementById('content-title').value = '';
+  document.getElementById('content-body').value = '';
+  renderUploadedFiles();
+  document.getElementById('content-modal').classList.add('open');
+};
+
+window.openEditModal = function(id) {
+  const item = items.find(i => i.id === id);
+  if (!item) return;
+  editingItemId = id;
+  uploadedAttachments = item.attachments ? [...item.attachments] : [];
+  document.getElementById('content-modal-title').textContent = 'Edit Content';
+  document.getElementById('content-save-btn').textContent = 'Save';
+  document.getElementById('content-title').value = item.title;
+  document.getElementById('content-body').value = item.body;
+  renderUploadedFiles();
+  document.getElementById('content-modal').classList.add('open');
+};
+
+window.closeContentModal = function() { document.getElementById('content-modal').classList.remove('open'); };
+
+window.saveContent = async function() {
+  const title = document.getElementById('content-title').value.trim();
+  if (!title) { document.getElementById('content-title').focus(); return; }
+  const payload = {
+    title,
+    body: document.getElementById('content-body').value,
+    author: getCurrentUser(),
+    attachments: uploadedAttachments,
+  };
+  const headers = { 'Content-Type': 'application/json', ...authHeaders() };
+  let res;
+  if (editingItemId) {
+    res = await fetch(`/api/content/${sectionId}/${editingItemId}`, { method: 'PUT', headers, body: JSON.stringify(payload) });
+  } else {
+    res = await fetch(`/api/content/${sectionId}`, { method: 'POST', headers, body: JSON.stringify(payload) });
+  }
+  if (!res.ok) { const err = await res.json(); showError(err.error || 'Failed to save'); return; }
+  closeContentModal();
+  await loadContent();
+};
+
+document.getElementById('file-input').addEventListener('change', async function() {
+  for (const file of this.files) {
+    const form = new FormData(); form.append('file', file);
+    try {
+      const res = await fetch('/api/upload', { method: 'POST', body: form });
+      const data = await res.json(); uploadedAttachments.push(data); renderUploadedFiles();
+    } catch (err) { console.error('Upload failed:', err); }
+  }
+  this.value = '';
+});
+
+function renderUploadedFiles() {
+  document.getElementById('uploaded-files').innerHTML = uploadedAttachments.map((a, i) =>
+    `<div class="uploaded-file">${escapeHtml(a.originalName)} <span class="remove" onclick="removeAttachment(${i})">×</span></div>`
+  ).join('');
+}
+window.removeAttachment = function(idx) { uploadedAttachments.splice(idx, 1); renderUploadedFiles(); };
+
+window.openDeleteModal = function(id) { deletingItemId = id; document.getElementById('delete-modal').classList.add('open'); };
+window.closeDeleteModal = function() { document.getElementById('delete-modal').classList.remove('open'); };
+window.confirmDelete = async function() {
+  if (!deletingItemId) return;
+  const res = await fetch(`/api/content/${sectionId}/${deletingItemId}`, { method: 'DELETE', headers: authHeaders() });
+  if (!res.ok) { const err = await res.json(); showError(err.error || 'Failed to delete'); closeDeleteModal(); return; }
+  closeDeleteModal();
+  await loadContent();
+};
+
+function escapeHtml(str) { const d = document.createElement('div'); d.textContent = str || ''; return d.innerHTML; }
+
+init();
+</script>
+</body>
+</html>

@@ -1,1 +1,5 @@
 Moloco Sales Deck template 2025.pptx
+node_modules/
+data/user_content.json
+uploads/
+.env

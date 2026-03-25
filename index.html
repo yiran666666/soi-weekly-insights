@@ -17,34 +17,247 @@
   .subtitle { color: var(--text-sec); font-size: 17px; margin-bottom: 40px; }
   .cards { display: flex; flex-direction: column; gap: 12px; }
   .card {
-    display: block; background: #fff; border-radius: 16px; padding: 28px 28px;
+    display: flex; align-items: center; background: #fff; border-radius: 16px; padding: 28px;
     text-decoration: none; color: var(--text); transition: all 0.2s;
-    border: 0.5px solid var(--border);
+    border: 0.5px solid var(--border); cursor: pointer;
   }
   .card:hover { transform: translateY(-1px); box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
+  .card-body { flex: 1; }
   .card-title { font-size: 20px; font-weight: 600; letter-spacing: -0.3px; display: flex; align-items: center; gap: 10px; }
   .card-desc { font-size: 14px; color: var(--text-sec); margin-top: 4px; line-height: 1.5; }
   .card-icon { font-size: 24px; }
+  .card-meta { font-size: 11px; color: var(--text-sec); margin-top: 4px; }
+  .card-actions { display: flex; gap: 4px; margin-left: 12px; opacity: 0; transition: opacity 0.15s; }
+  .card:hover .card-actions { opacity: 1; }
+  .card-actions button {
+    background: none; border: none; cursor: pointer; padding: 4px 8px;
+    font-size: 13px; color: var(--text-sec); border-radius: 6px; font-family: inherit;
+  }
+  .card-actions button:hover { background: #f0f0f5; color: var(--text); }
+  .card-actions .delete-btn:hover { color: #ff3b30; }
+
+  .fab {
+    position: fixed; bottom: 24px; right: 24px; z-index: 300;
+    display: flex; align-items: center; gap: 8px;
+    padding: 12px 20px; border-radius: 50px; border: none;
+    background: var(--accent); color: #fff; font-size: 14px; font-weight: 600;
+    cursor: pointer; font-family: inherit; box-shadow: 0 4px 16px rgba(0,113,227,0.4);
+    transition: all 0.15s;
+  }
+  .fab:hover { background: #0062cc; transform: translateY(-1px); }
+
+  .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.4); z-index: 1000; align-items: center; justify-content: center; backdrop-filter: blur(4px); }
+  .modal-overlay.open { display: flex; }
+  .modal { background: #fff; border-radius: 18px; padding: 32px; width: 500px; max-width: 90vw; box-shadow: 0 20px 60px rgba(0,0,0,0.2); }
+  .modal h2 { font-size: 22px; font-weight: 700; color: var(--text); margin-bottom: 20px; letter-spacing: -0.3px; }
+  .modal label { display: block; font-size: 13px; font-weight: 600; color: var(--text-sec); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.3px; }
+  .modal input, .modal textarea { width: 100%; padding: 10px 14px; border: 1px solid var(--border); border-radius: 10px; font-size: 15px; font-family: inherit; margin-bottom: 16px; outline: none; }
+  .modal input:focus, .modal textarea:focus { border-color: var(--accent); box-shadow: 0 0 0 3px rgba(0,113,227,0.1); }
+  .modal textarea { min-height: 80px; resize: vertical; }
+  .modal-actions { display: flex; gap: 10px; justify-content: flex-end; margin-top: 8px; }
+  .modal-actions button { padding: 10px 22px; border-radius: 10px; font-size: 14px; font-weight: 600; cursor: pointer; border: none; font-family: inherit; }
+  .btn-cancel { background: #f0f0f5; color: var(--text); }
+  .btn-cancel:hover { background: #e5e5ea; }
+  .btn-primary { background: var(--accent); color: #fff; }
+  .btn-primary:hover { background: #0062cc; }
+  .error-toast { position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%); background: #ff3b30; color: #fff; padding: 10px 20px; border-radius: 10px; font-size: 14px; font-weight: 500; z-index: 2000; display: none; }
+
+  .route-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+  .route-item {
+    display: flex; align-items: center; gap: 14px; padding: 16px 18px;
+    border: 1.5px solid var(--border); border-radius: 14px;
+    text-decoration: none; color: var(--text); transition: all 0.15s; cursor: pointer;
+  }
+  .route-item:hover { border-color: var(--accent); background: rgba(0,113,227,0.02); }
+  .route-icon { font-size: 24px; flex-shrink: 0; }
+  .route-title { font-size: 15px; font-weight: 600; }
+  .route-desc { font-size: 12px; color: var(--text-sec); margin-top: 1px; }
+  .route-divider { text-align: center; font-size: 12px; color: var(--text-sec); padding: 4px 0; }
+
+  .icon-picker { display: flex; gap: 6px; flex-wrap: wrap; margin-bottom: 16px; }
+  .icon-option {
+    width: 40px; height: 40px; display: flex; align-items: center; justify-content: center;
+    font-size: 20px; border-radius: 10px; border: 2px solid transparent; cursor: pointer;
+    background: #f5f5f7; transition: all 0.12s;
+  }
+  .icon-option:hover { background: #e8e8ed; }
+  .icon-option.selected { border-color: var(--accent); background: rgba(0,113,227,0.08); }
 </style>
 </head>
 <body>
 <div class="container">
   <h1>China GDS</h1>
   <div class="subtitle">Repository</div>
-  <div class="cards">
+  <div class="cards" id="cards">
     <a href="updates.html" class="card">
-      <div class="card-title"><span class="card-icon">📋</span> Weekly Updates</div>
-      <div class="card-desc">GDS team updates, issue tracking, and operational notes</div>
+      <div class="card-body">
+        <div class="card-title"><span class="card-icon">📋</span> Weekly Updates</div>
+        <div class="card-desc">GDS team updates, issue tracking, and operational notes</div>
+      </div>
     </a>
     <a href="insights.html" class="card">
-      <div class="card-title"><span class="card-icon">📊</span> Premium Account SoI Trends</div>
-      <div class="card-desc">Weekly SoI insights, contribution analysis, and account deep-dives</div>
+      <div class="card-body">
+        <div class="card-title"><span class="card-icon">📊</span> Premium Account SoI Trends</div>
+        <div class="card-desc">Weekly SoI insights, contribution analysis, and account deep-dives</div>
+      </div>
     </a>
     <a href="knowledge.html" class="card">
-      <div class="card-title"><span class="card-icon">📚</span> Knowledge Repository</div>
-      <div class="card-desc">Playbooks, documentation, and reference links</div>
+      <div class="card-body">
+        <div class="card-title"><span class="card-icon">📚</span> Knowledge Repository</div>
+        <div class="card-desc">Playbooks, documentation, and reference links</div>
+      </div>
     </a>
+    <div id="custom-sections"></div>
+  </div>
+  <div id="user-badge-container"></div>
+</div>
+
+<button class="fab" onclick="openContribute()">+ Contribute</button>
+
+<!-- Contribute Router -->
+<div class="modal-overlay" id="contribute-modal">
+  <div class="modal">
+    <h2>Where do you want to contribute?</h2>
+    <div class="route-list">
+      <a href="updates.html?contribute=true" class="route-item">
+        <span class="route-icon">📋</span>
+        <div><div class="route-title">Weekly Updates</div><div class="route-desc">Add to the latest weekly report</div></div>
+      </a>
+      <a href="insights.html?contribute=true" class="route-item">
+        <span class="route-icon">📊</span>
+        <div><div class="route-title">SoI Insights</div><div class="route-desc">Add to the latest SoI report</div></div>
+      </a>
+      <a href="knowledge.html?contribute=true" class="route-item">
+        <span class="route-icon">📚</span>
+        <div><div class="route-title">Knowledge Repository</div><div class="route-desc">Add a resource link</div></div>
+      </a>
+    </div>
+    <div class="route-divider">or</div>
+    <div class="route-list">
+      <div class="route-item" onclick="closeContribute(); openNewSectionModal();">
+        <span class="route-icon">✨</span>
+        <div><div class="route-title">Create New Section</div><div class="route-desc">Add a brand new section to the repository</div></div>
+      </div>
+    </div>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeContribute()">Cancel</button>
+    </div>
   </div>
 </div>
+
+<!-- New Section Modal -->
+<div class="modal-overlay" id="section-modal">
+  <div class="modal">
+    <h2>Create New Section</h2>
+    <label>Icon</label>
+    <div class="icon-picker" id="icon-picker"></div>
+    <label>Title</label>
+    <input type="text" id="section-title" placeholder="e.g. Campaign Playbooks">
+    <label>Description</label>
+    <textarea id="section-desc" placeholder="Brief description of this section..."></textarea>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeSectionModal()">Cancel</button>
+      <button class="btn-primary" onclick="saveSection()">Create</button>
+    </div>
+  </div>
+</div>
+
+<!-- Delete Modal -->
+<div class="modal-overlay" id="delete-modal">
+  <div class="modal">
+    <h2>Delete Section</h2>
+    <p style="color:var(--text-sec);font-size:15px;margin-bottom:20px;">This will permanently delete this section and all its content.</p>
+    <div class="modal-actions">
+      <button class="btn-cancel" onclick="closeDeleteModal()">Cancel</button>
+      <button class="btn-primary" style="background:#ff3b30;" onclick="confirmDelete()">Delete</button>
+    </div>
+  </div>
+</div>
+
+<div class="error-toast" id="error-toast"></div>
+
+<script src="auth.js"></script>
+<script>
+const ICONS = ['📄','📝','📌','📎','🗂️','📁','🔗','🧪','💡','🎯','🚀','📈','🛠️','👥','🏆','📣','⚡','🔍','🗓️','💬'];
+let selectedIcon = '📄';
+let deletingSectionId = null;
+
+function showError(msg) {
+  const el = document.getElementById('error-toast');
+  el.textContent = msg; el.style.display = 'block';
+  setTimeout(() => { el.style.display = 'none'; }, 3000);
+}
+
+window.openContribute = function() { document.getElementById('contribute-modal').classList.add('open'); };
+window.closeContribute = function() { document.getElementById('contribute-modal').classList.remove('open'); };
+
+// --- Sections ---
+function renderIconPicker() {
+  document.getElementById('icon-picker').innerHTML = ICONS.map(ic =>
+    `<div class="icon-option ${ic === selectedIcon ? 'selected' : ''}" onclick="selectedIcon='${ic}';document.querySelectorAll('.icon-option').forEach(o=>o.classList.remove('selected'));this.classList.add('selected')">${ic}</div>`
+  ).join('');
+}
+
+async function loadSections() {
+  try {
+    const res = await fetch('/api/sections');
+    if (!res.ok) return;
+    const sections = await res.json();
+    const user = getCurrentUser();
+    document.getElementById('custom-sections').innerHTML = sections.map(s => {
+      const mine = user && user.toLowerCase() === (s.createdBy || '').toLowerCase();
+      return `
+        <div class="card" onclick="window.location='section.html?id=${s.id}'">
+          <div class="card-body">
+            <div class="card-title"><span class="card-icon">${s.icon}</span> ${esc(s.title)}</div>
+            <div class="card-desc">${esc(s.description)}</div>
+            <div class="card-meta">by @${esc(s.createdBy || 'Unknown')}</div>
+          </div>
+          ${mine ? `<div class="card-actions" onclick="event.stopPropagation()">
+            <button class="delete-btn" onclick="openDeleteModal('${s.id}')">Delete</button>
+          </div>` : ''}
+        </div>`;
+    }).join('');
+  } catch {}
+}
+
+window.openNewSectionModal = function() {
+  selectedIcon = '📄';
+  document.getElementById('section-title').value = '';
+  document.getElementById('section-desc').value = '';
+  renderIconPicker();
+  document.getElementById('section-modal').classList.add('open');
+};
+window.closeSectionModal = function() { document.getElementById('section-modal').classList.remove('open'); };
+
+window.saveSection = async function() {
+  const title = document.getElementById('section-title').value.trim();
+  if (!title) { document.getElementById('section-title').focus(); return; }
+  const res = await fetch('/api/sections', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', ...authHeaders() },
+    body: JSON.stringify({ title, description: document.getElementById('section-desc').value.trim(), icon: selectedIcon }),
+  });
+  if (!res.ok) { showError((await res.json()).error || 'Failed'); return; }
+  closeSectionModal();
+  loadSections();
+};
+
+window.openDeleteModal = function(id) { deletingSectionId = id; document.getElementById('delete-modal').classList.add('open'); };
+window.closeDeleteModal = function() { document.getElementById('delete-modal').classList.remove('open'); deletingSectionId = null; };
+window.confirmDelete = async function() {
+  if (!deletingSectionId) return;
+  const res = await fetch(`/api/sections/${deletingSectionId}`, { method: 'DELETE', headers: authHeaders() });
+  if (!res.ok) { showError((await res.json()).error || 'Failed'); closeDeleteModal(); return; }
+  closeDeleteModal(); loadSections();
+};
+
+function esc(s) { const d = document.createElement('div'); d.textContent = s || ''; return d.innerHTML; }
+
+ensureUser().then(() => {
+  loadSections();
+  renderUserBadge('#user-badge-container');
+});
+</script>
 </body>
 </html>
