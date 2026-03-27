@@ -1,0 +1,72 @@
+account,app_name,period,total_spend,avg_daily_spend,moloco_installs,non_moloco_installs,soi_pct
+LASTWAR,--- TOTAL ---,1_Benchmark,487253.68,69607.67,15037,471733,3.09
+LASTWAR,--- TOTAL ---,2_Jan,2563326.63,82687.96,499816,11195825,4.62
+LASTWAR,--- TOTAL ---,3_Feb,1392251.83,49723.28,202005,2342590,7.93
+LASTWAR,--- TOTAL ---,4_Mar_MTD,612251.05,47096.23,70911,740084,8.8
+LASTWAR,Last War:Survival,1_Benchmark,473388.15,67626.88,88780,856712,9.39
+LASTWAR,Last War:Survival,2_Jan,2522246.68,81362.8,495481,4211539,10.53
+LASTWAR,Last War:Survival,3_Feb,1392251.83,49723.28,202005,2342590,7.94
+LASTWAR,Last War:Survival,4_Mar_MTD,612251.05,47096.23,70911,740084,8.74
+LASTWAR,Last War:Survival Game,1_Benchmark,13865.53,1980.79,1214,2073435,0.06
+LASTWAR,Last War:Survival Game,2_Jan,41079.95,1521.48,4335,6984286,0.06
+TOPGAMES,--- TOTAL ---,1_Benchmark,150108.83,21444.12,8970,44440,16.79
+TOPGAMES,--- TOTAL ---,2_Jan,688634.97,22214.03,192785,1294956,13.81
+TOPGAMES,--- TOTAL ---,3_Feb,582092.18,20789.01,157995,1113828,12.71
+TOPGAMES,--- TOTAL ---,4_Mar_MTD,279495.91,21499.69,157148,486286,24.56
+TOPGAMES,Evony,1_Benchmark,118637.06,16948.15,12296,57181,17.7
+TOPGAMES,Evony,2_Jan,530209.66,17103.54,48812,202239,19.44
+TOPGAMES,Evony,3_Feb,446665.41,15952.34,34480,182458,15.89
+TOPGAMES,Evony,4_Mar_MTD,217585.68,16737.36,16131,54578,22.81
+TOPGAMES,Evony: The King's Return,1_Benchmark,31471.77,4495.97,42704,289858,12.84
+TOPGAMES,Evony: The King's Return,2_Jan,158425.31,5110.49,143973,1092717,11.64
+TOPGAMES,Evony: The King's Return,3_Feb,135426.77,4836.67,123515,931370,11.71
+TOPGAMES,Evony: The King's Return,4_Mar_MTD,61910.23,4762.33,141017,431708,24.62
+Tigo_Tigo_Madhouse_0108_01,--- TOTAL ---,1_Benchmark,78426.16,11203.74,18250,115707,13.62
+Tigo_Tigo_Madhouse_0108_01,--- TOTAL ---,2_Jan,352815.86,11381.16,571543,3805715,13.07
+Tigo_Tigo_Madhouse_0108_01,--- TOTAL ---,3_Feb,256936.27,9176.3,377425,2788506,11.93
+Tigo_Tigo_Madhouse_0108_01,--- TOTAL ---,4_Mar_MTD,119115.91,9162.76,225736,1201740,15.51
+Tigo_Tigo_Madhouse_0108_01,Ayar-Chat&Play,1_Benchmark,16378.76,2339.82,24237,60994,28.44
+Tigo_Tigo_Madhouse_0108_01,Ayar-Chat&Play,2_Jan,71003.05,2290.42,114891,374579,23.47
+Tigo_Tigo_Madhouse_0108_01,Ayar-Chat&Play,3_Feb,46294.47,1653.37,77203,260048,22.89
+Tigo_Tigo_Madhouse_0108_01,Ayar-Chat&Play,4_Mar_MTD,21392.67,1645.59,44930,115194,28.06
+Tigo_Tigo_Madhouse_0108_01,"Cace: Live Joy Chat, Dance",1_Benchmark,3529.06,504.15,3503,1252,73.67
+Tigo_Tigo_Madhouse_0108_01,"Cace: Live Joy Chat, Dance",2_Jan,16567.7,534.44,17694,7089,71.4
+Tigo_Tigo_Madhouse_0108_01,"Cace: Live Joy Chat, Dance",3_Feb,21251.4,758.98,16621,5143,76.37
+Tigo_Tigo_Madhouse_0108_01,"Cace: Live Joy Chat, Dance",4_Mar_MTD,11510.96,885.46,7600,2281,76.92
+Tigo_Tigo_Madhouse_0108_01,Chato - Video Chat & Have Fun,1_Benchmark,4261.81,608.83,6008,192401,3.03
+Tigo_Tigo_Madhouse_0108_01,Chato - Video Chat & Have Fun,2_Jan,26450.8,853.25,32687,840746,3.74
+Tigo_Tigo_Madhouse_0108_01,Chato - Video Chat & Have Fun,3_Feb,23907.24,853.83,38563,765365,4.8
+Tigo_Tigo_Madhouse_0108_01,Chato - Video Chat & Have Fun,4_Mar_MTD,9856.08,758.16,15568,363606,4.11
+Tigo_Tigo_Madhouse_0108_01,"Cove - Share Fun, Video Chat",1_Benchmark,1527.99,218.28,3075,754,80.31
+Tigo_Tigo_Madhouse_0108_01,"Cove - Share Fun, Video Chat",2_Jan,13917.7,448.96,16623,4245,79.66
+Tigo_Tigo_Madhouse_0108_01,"Cove - Share Fun, Video Chat",3_Feb,11180.23,399.29,10559,4045,72.3
+Tigo_Tigo_Madhouse_0108_01,"Cove - Share Fun, Video Chat",4_Mar_MTD,10328.84,794.53,7919,1936,80.36
+Tigo_Tigo_Madhouse_0108_01,"Sube - Make Fridens, Chat",1_Benchmark,2812.66,401.81,6478,1684,79.37
+Tigo_Tigo_Madhouse_0108_01,"Sube - Make Fridens, Chat",2_Jan,19023.71,613.67,35829,10516,77.31
+Tigo_Tigo_Madhouse_0108_01,"Sube - Make Fridens, Chat",3_Feb,20365.02,727.32,22117,6253,77.96
+Tigo_Tigo_Madhouse_0108_01,"Sube - Make Fridens, Chat",4_Mar_MTD,11568.49,889.88,10473,2436,81.13
+Tigo_Tigo_Madhouse_0108_01,Ti.Live Lite-Chill & Stream,1_Benchmark,1786.54,255.22,5944,26349,18.41
+Tigo_Tigo_Madhouse_0108_01,Ti.Live Lite-Chill & Stream,2_Jan,11258.69,363.18,26842,94719,22.08
+Tigo_Tigo_Madhouse_0108_01,Ti.Live Lite-Chill & Stream,3_Feb,576.87,72.11,1074,20139,5.06
+Tigo_Tigo_Madhouse_0108_01,Ti.Live-Chill & Stream,1_Benchmark,7708.54,1101.22,8449,108990,7.19
+Tigo_Tigo_Madhouse_0108_01,Ti.Live-Chill & Stream,2_Jan,20880.46,673.56,34039,437641,7.22
+Tigo_Tigo_Madhouse_0108_01,Ti.Live-Chill & Stream,3_Feb,19080.7,681.45,31147,366504,7.83
+Tigo_Tigo_Madhouse_0108_01,Ti.Live-Chill & Stream,4_Mar_MTD,6587.36,506.72,25990,149022,14.85
+Tigo_Tigo_Madhouse_0108_01,Tigo-Live Video Chat&More,1_Benchmark,15493.7,2213.39,34715,249627,12.21
+Tigo_Tigo_Madhouse_0108_01,Tigo-Live Video Chat&More,2_Jan,68375.33,2205.66,132097,1153120,10.28
+Tigo_Tigo_Madhouse_0108_01,Tigo-Live Video Chat&More,3_Feb,39224.26,1400.87,80092,792165,9.18
+Tigo_Tigo_Madhouse_0108_01,Tigo-Live Video Chat&More,4_Mar_MTD,17055.15,1311.93,38845,322719,10.74
+Tigo_Tigo_Madhouse_0108_01,Toki-Casual Connect & Chat,1_Benchmark,5212.67,744.67,9091,47190,16.15
+Tigo_Tigo_Madhouse_0108_01,Toki-Casual Connect & Chat,2_Jan,23690.38,764.21,35395,372081,8.69
+Tigo_Tigo_Madhouse_0108_01,Toki-Casual Connect & Chat,3_Feb,632.57,90.37,601,28110,2.09
+Tigo_Tigo_Madhouse_0108_01,WeLive - Video Chat&Meet,1_Benchmark,18280.72,2611.53,21138,102259,17.13
+Tigo_Tigo_Madhouse_0108_01,WeLive - Video Chat&Meet,2_Jan,72604.82,2342.09,89995,508808,15.03
+Tigo_Tigo_Madhouse_0108_01,WeLive - Video Chat&Meet,3_Feb,63616.11,2272.0,77857,482841,13.89
+Tigo_Tigo_Madhouse_0108_01,WeLive - Video Chat&Meet,4_Mar_MTD,24128.56,1856.04,63940,212273,23.15
+Tigo_Tigo_Madhouse_0108_01,center.juno.android,2_Jan,461.99,25.67,23196,1458,94.09
+Tigo_Tigo_Madhouse_0108_01,center.juno.android,3_Feb,3475.61,124.13,12359,9670,56.1
+Tigo_Tigo_Madhouse_0108_01,center.juno.android,4_Mar_MTD,2634.28,202.64,4997,23495,17.54
+Tigo_Tigo_Madhouse_0108_01,chat.style.pava.andoid,1_Benchmark,1433.71,204.82,5166,261,95.19
+Tigo_Tigo_Madhouse_0108_01,chat.style.pava.andoid,2_Jan,8581.22,276.81,12255,704,94.57
+Tigo_Tigo_Madhouse_0108_01,chat.style.pava.andoid,3_Feb,7331.78,261.85,9232,48223,16.07
+Tigo_Tigo_Madhouse_0108_01,chat.style.pava.andoid,4_Mar_MTD,4053.51,311.81,5474,8778,38.41
