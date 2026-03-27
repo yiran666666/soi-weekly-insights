@@ -66,14 +66,15 @@
 <div class="layout">
   <div class="sidebar">
     <div class="sidebar-title">SoI Insights</div>
-    <a class="item active" href="#" data-week="2026-W12" onclick="loadWeek('2026-W12',this);return false"><span>2026 W12 <span class="badge">Latest</span></span><span class="uc-badge" id="badge-2026-W12" style="display:none"></span></a>
+    <a class="item active" href="#" data-week="2026-W13" onclick="loadWeek('2026-W13',this);return false"><span>2026 W13 <span class="badge">Latest</span></span><span class="uc-badge" id="badge-2026-W13" style="display:none"></span></a>
+    <a class="item" href="#" data-week="2026-W12" onclick="loadWeek('2026-W12',this);return false"><span>2026 W12</span><span class="uc-badge" id="badge-2026-W12" style="display:none"></span></a>
     <a class="item" href="#" data-week="2026-W11" onclick="loadWeek('2026-W11',this);return false"><span>2026 W11</span><span class="uc-badge" id="badge-2026-W11" style="display:none"></span></a>
     <a class="item" href="#" data-week="2026-W09" onclick="loadWeek('2026-W09',this);return false"><span>2026 W09</span><span class="uc-badge" id="badge-2026-W09" style="display:none"></span></a>
     <a class="item" href="#" data-week="2026-W08" onclick="loadWeek('2026-W08',this);return false"><span>2026 W08</span><span class="uc-badge" id="badge-2026-W08" style="display:none"></span></a>
     <a class="item" href="#" data-week="2026-W07" onclick="loadWeek('2026-W07',this);return false"><span>2026 W07</span><span class="uc-badge" id="badge-2026-W07" style="display:none"></span></a>
     <div id="user-badge-container"></div>
   </div>
-  <div class="content"><iframe id="viewer" src="2026-W12/weekly_insights.html"></iframe></div>
+  <div class="content"><iframe id="viewer" src="2026-W13/weekly_insights.html"></iframe></div>
 </div>
 
 <button class="fab" onclick="openContribute()">+ Contribute</button>
@@ -124,8 +125,8 @@
 <script src="auth.js"></script>
 <script>
 const SECTION_PREFIX = 'insights_';
-const WEEKS = ['2026-W12','2026-W11','2026-W09','2026-W08','2026-W07'];
-let currentWeek = '2026-W12';
+const WEEKS = ['2026-W13','2026-W12','2026-W11','2026-W09','2026-W08','2026-W07'];
+let currentWeek = '2026-W13';
 let allContent = {};
 let uploadedAttachments = [];
 let deletingId = null, deletingWeek = null;
