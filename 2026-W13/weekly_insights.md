@@ -51,14 +51,14 @@
 
 **Next Steps:**
 
-**P0 — Accelerate SoI Up + Spend Down (2 accounts):** Biggest win opportunity — Moloco is already gaining share in these apps even as spend declines. App-level review: why is spend down? If we can restore or grow budget here, SoI gains should compound. Understand whether the app cut Moloco spend intentionally or if budget shifted to other channels we can win back.
-- Accounts: TOPGAMES, LASTWAR
-
 **P0 — Protect SoI Up + Spend Up (5 accounts):** Scaling efficiently — review at the app level to understand what's working (creative, audience, geo) and whether there's room to increase budget further. Watch for signs of saturation (rising CPIs, declining ROAS).
 - Accounts: 37GAMES, AVIAGAMES, Wedobest_Screw Sort Puzzl, Luckymoney, CENTURY_GAMES
 
-**P1 — Investigate SoI Down + Spend Up (5 accounts):** Spending more but losing share. Deep-dive at the app level: is the unattributed install surge from organic growth, other DSPs scaling up, or a market-wide expansion?
+**P0 — Investigate SoI Down + Spend Up (5 accounts):** Spending more but losing share. Deep-dive at the app level: is the unattributed install surge from organic growth, other DSPs scaling up, or a market-wide expansion?
 - Accounts: TIKTOK_US, Mattel163_China, Learnings, MICROFUN, ZerooGravity
+
+**P1 — Accelerate SoI Up + Spend Down (2 accounts):** Moloco is gaining share even as spend declines. App-level review: why is spend down? If we can restore or grow budget here, SoI gains should compound. Understand whether the app cut Moloco spend intentionally or if budget shifted to other channels we can win back.
+- Accounts: TOPGAMES, LASTWAR
 
 **P1 — Assess SoI Down + Spend Down (13 accounts):** Pulling back — app-level review needed: is this intentional budget reallocation, seasonal pullback, or early churn signal? For accounts with sharp Moloco install drops, check for campaign pauses, creative fatigue, or the app shifting budget to other channels.
 - Accounts: BITOOL, Last Z_IOS_01(drb5MYyoQAz, EssentialsTech, KINGSGROUP, MICO, RIVERGAME_HK, Tigo_Tigo_Madhouse_0108_0, LEMON8, Lands of Jail_Madhouse_04, SPEELEAD, Dark War Survival_MADHOUS, NetEase, BYTEDANCEPTE
