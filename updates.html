@@ -79,7 +79,8 @@
 <div class="layout">
   <div class="sidebar">
     <div class="sidebar-title">Weekly Updates</div>
-    <a class="item active" href="#" data-week="2026-03-23" onclick="loadUpdate('2026-03-23',this);return false"><span>2026 W13 <span class="badge">Latest</span></span><span class="uc-badge" id="badge-2026-03-23" style="display:none"></span></a>
+    <a class="item active" href="#" data-week="2026-03-30" onclick="loadUpdate('2026-03-30',this);return false"><span>2026 W14 <span class="badge">Latest</span></span><span class="uc-badge" id="badge-2026-03-30" style="display:none"></span></a>
+    <a class="item" href="#" data-week="2026-03-23" onclick="loadUpdate('2026-03-23',this);return false"><span>2026 W13</span><span class="uc-badge" id="badge-2026-03-23" style="display:none"></span></a>
     <a class="item" href="#" data-week="2026-03-16" onclick="loadUpdate('2026-03-16',this);return false"><span>2026 W12</span><span class="uc-badge" id="badge-2026-03-16" style="display:none"></span></a>
     <a class="item" href="#" data-week="2026-03-09" onclick="loadUpdate('2026-03-09',this);return false"><span>2026 W11</span><span class="uc-badge" id="badge-2026-03-09" style="display:none"></span></a>
     <a class="item" href="#" data-week="2026-03-02" onclick="loadUpdate('2026-03-02',this);return false"><span>2026 W10</span><span class="uc-badge" id="badge-2026-03-02" style="display:none"></span></a>
@@ -88,7 +89,7 @@
     <a class="item" href="#" data-week="2026-01-18" onclick="loadUpdate('2026-01-18',this);return false"><span>2026 W03</span><span class="uc-badge" id="badge-2026-01-18" style="display:none"></span></a>
     <div id="user-badge-container"></div>
   </div>
-  <div class="content"><iframe id="viewer" src="updates/2026-03-23.html"></iframe></div>
+  <div class="content"><iframe id="viewer" src="updates/2026-03-30.html"></iframe></div>
 </div>
 
 <button class="fab" onclick="openContribute()">+ Contribute</button>
@@ -144,8 +145,8 @@
 <script src="auth.js"></script>
 <script>
 const SECTION_PREFIX = 'updates_';
-const WEEKS = ['2026-03-23','2026-03-16','2026-03-09','2026-03-02','2026-02-09','2026-01-30','2026-01-18'];
-let currentWeek = '2026-03-23';
+const WEEKS = ['2026-03-30','2026-03-23','2026-03-16','2026-03-09','2026-03-02','2026-02-09','2026-01-30','2026-01-18'];
+let currentWeek = '2026-03-30';
 let allContent = {};
 let polishedData = null;
 let uploadedAttachments = [];
