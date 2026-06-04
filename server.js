@@ -10,6 +10,48 @@ const PORT = process.env.PORT || 3456;
 
 // --- Middleware ---
 app.use(express.json({ limit: '10mb' }));
+
+// --- Identity (no login screen) ---
+// Access control AND identity are provided by Google IAP (domain:moloco.com) in
+// front of this service. IAP passes the signed-in user in the
+// `X-Goog-Authenticated-User-Email` header (format "accounts.google.com:user@moloco.com").
+// We derive a display name from it for content authorship — no prompt needed.
+function displayNameFromIap(req) {
+  const raw = req.headers['x-goog-authenticated-user-email'] || '';
+  const email = raw.split(':').pop();
+  if (!email || !email.includes('@')) return null;
+  const local = email.split('@')[0]; // e.g. "yiran.shi"
+  return local
+    .split(/[._-]+/)
+    .filter(Boolean)
+    .map(s => s.charAt(0).toUpperCase() + s.slice(1))
+    .join(' '); // -> "Yiran Shi"
+}
+
+// Make the IAP identity available to the frontend (which reads the gds_user
+// cookie via auth.js). Falls back to any existing cookie when running locally
+// without IAP, so dev still works.
+app.use((req, res, next) => {
+  const name = displayNameFromIap(req);
+  if (name) {
+    const enc = encodeURIComponent(name);
+    res.setHeader('Set-Cookie', [
+      `gds_user=${enc};path=/;max-age=${60 * 60 * 24 * 30};SameSite=Lax`,
+      `gds_auth=1;path=/;max-age=${60 * 60 * 24 * 30};SameSite=Lax`,
+    ]);
+    req.gdsUser = name;
+  }
+  next();
+});
+
+// API to get current user — IAP identity first, cookie fallback for local dev
+app.get('/api/me', (req, res) => {
+  if (req.gdsUser) return res.json({ name: req.gdsUser });
+  const cookie = req.headers.cookie || '';
+  const match = cookie.match(/gds_user=([^;]+)/);
+  res.json({ name: match ? decodeURIComponent(match[1]) : null });
+});
+
 app.use(express.static(__dirname));
 
 // --- File upload config ---
